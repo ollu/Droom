@@ -1,0 +1,5 @@
+deploy/
+source/.settings/
+source/.actionScriptProperties
+source/.project
+html-template/

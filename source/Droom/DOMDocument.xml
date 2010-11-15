@@ -1,4 +1,25 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="750" height="350" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 11.0 build 485" majorVersion="11" buildNumber="485" viewAngle3D="70.7391536835427" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#000000" width="750" height="350" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 11.0 build 485" majorVersion="11" buildNumber="485" viewAngle3D="70.7391536835427" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+     <folders>
+          <DOMFolderItem name="EnemyShips" itemID="4a031846-000003fb"/>
+          <DOMFolderItem name="Resources" itemID="4a03187b-000003ff"/>
+     </folders>
+     <symbols>
+          <Include href="Boss.xml"/>
+          <Include href="EnemyShips/Boss ship 1.xml" loadImmediate="false"/>
+          <Include href="EnemyShips/EnemyMissile.xml"/>
+          <Include href="EnemyShips/EnemyShip.xml"/>
+          <Include href="EnemyShips/MiniBoss.xml"/>
+          <Include href="Explosion.xml"/>
+          <Include href="PowerUps.xml"/>
+          <Include href="Resources/AlienHead.xml" loadImmediate="false"/>
+          <Include href="Resources/AlienLamp.xml" loadImmediate="false"/>
+          <Include href="Resources/fire.xml" loadImmediate="false"/>
+          <Include href="Resources/ship-ship.xml" loadImmediate="false"/>
+          <Include href="Resources/ship-smoke.xml" loadImmediate="false"/>
+          <Include href="Resources/smoke.xml" loadImmediate="false"/>
+          <Include href="RewardPoints.xml"/>
+          <Include href="Ship.xml"/>
+     </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
                <layers>

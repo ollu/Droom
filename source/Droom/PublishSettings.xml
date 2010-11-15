@@ -1,17 +1,17 @@
 <flash_profiles>
 <flash_profile version="1.0" name="Default" current="true">
   <PublishFormatProperties enabled="true">
-    <defaultNames>1</defaultNames>
+    <defaultNames>0</defaultNames>
     <flash>1</flash>
     <projectorWin>0</projectorWin>
     <projectorMac>0</projectorMac>
-    <html>1</html>
+    <html>0</html>
     <gif>0</gif>
     <jpeg>0</jpeg>
     <png>0</png>
     <qt>0</qt>
     <rnwk>0</rnwk>
-    <flashDefaultName>1</flashDefaultName>
+    <flashDefaultName>0</flashDefaultName>
     <projectorWinDefaultName>1</projectorWinDefaultName>
     <projectorMacDefaultName>1</projectorMacDefaultName>
     <htmlDefaultName>1</htmlDefaultName>
@@ -20,7 +20,7 @@
     <pngDefaultName>1</pngDefaultName>
     <qtDefaultName>1</qtDefaultName>
     <rnwkDefaultName>1</rnwkDefaultName>
-    <flashFileName>Droom.swf</flashFileName>
+    <flashFileName>/Users/ollu/GIT/FLASH/Droom/deploy/Droom.swf</flashFileName>
     <projectorWinFileName>Droom.exe</projectorWinFileName>
     <projectorMacFileName>Droom.app</projectorMacFileName>
     <htmlFileName>Droom.html</htmlFileName>
@@ -53,7 +53,7 @@
     <WindowMode>0</WindowMode>
     <DisplayMenu>1</DisplayMenu>
     <DeviceFont>0</DeviceFont>
-    <TemplateFileName></TemplateFileName>
+    <TemplateFileName>/Users/ollu/Library/Application Support/Adobe/Flash CS5/en_US/Configuration/HTML/Default.html</TemplateFileName>
     <showTagWarnMsg>1</showTagWarnMsg>
   </PublishHtmlProperties>
   <PublishFlashProperties enabled="true">

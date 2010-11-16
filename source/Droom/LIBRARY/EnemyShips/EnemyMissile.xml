@@ -1,0 +1,26 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EnemyShips/EnemyMissile" itemID="49ffee09-00000043" linkageExportForAS="true" linkageIdentifier="EnemyMissile" linkageClassName="EnemyMissile" sourceLibraryItemHRef="Missile copy" lastModified="1241505823">
+  <timeline>
+    <DOMTimeline name="EnemyMissile">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#990000"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!-6 30[34 36 63 38!63 38|63 -38!63 -38[34 -35 -6 -25!-6 -25[-63 -11 -63 5!-63 5[-63 21 -6 30"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

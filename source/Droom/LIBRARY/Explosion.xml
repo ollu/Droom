@@ -1,0 +1,373 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Explosion" itemID="49ffe182-00000019" linkageExportForAS="true" linkageIdentifier="Explosion" linkageClassName="Explosion" sourceLibraryItemHRef="Symbol 1" lastModified="1289829286" lastUniqueIdentifier="7">
+  <timeline>
+    <DOMTimeline name="Explosion">
+      <layers>
+        <DOMLayer name="smoke" color="#4FFFFF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="6" duration="2" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="-25" centerPoint3DY="-17">
+                  <matrix>
+                    <Matrix tx="-32.95" ty="-16.95"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="-6.65" centerPoint3DY="19.05">
+                  <matrix>
+                    <Matrix tx="-14.6" ty="19.1"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="22.55" centerPoint3DY="-5.1">
+                  <matrix>
+                    <Matrix tx="14.6" ty="-5.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="22.55" centerPoint3DY="24.65">
+                  <matrix>
+                    <Matrix tx="14.6" ty="24.7"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="-1.05" centerPoint3DY="-31.45">
+                  <matrix>
+                    <Matrix tx="-9" ty="-31.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="-9.1" centerPoint3DY="-1.1">
+                  <matrix>
+                    <Matrix tx="-17.05" ty="-1.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="-37.3" centerPoint3DY="7.2">
+                  <matrix>
+                    <Matrix tx="-45.25" ty="7.25"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="31.25" centerPoint3DY="-8.1">
+                  <matrix>
+                    <Matrix a="2.42138671875" d="2.42138671875" tx="12" ty="-8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="14.55" centerPoint3DY="28.65">
+                  <matrix>
+                    <Matrix a="2.51034545898438" d="2.51034545898438" tx="-5.4" ty="28.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="-1.05" centerPoint3DY="-31.45">
+                  <matrix>
+                    <Matrix a="2.26414489746094" d="2.26414489746094" tx="-19.05" ty="-31.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="Resources/smoke" name="" centerPoint3DX="-37.3" centerPoint3DY="7.2">
+                  <matrix>
+                    <Matrix a="2.51571655273438" d="2.51571655273438" tx="-57.3" ty="7.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="7.95" y="-0.05"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="stripes" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.5">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!96 -10[98 -41 158 -150!169 68[192 46 308 0!33 343[#31.9F #176.51 53 504!183 212[217 204 343 236!-64 -45[-62.09375 #FFFFAB.A1 -125 -197!-179 88[-207 63 -334 39!-159 267[-194 279 -276 379"/>
+                    <Edge cubics="!169 68(;184,53 231,31 308,0q169 68Q192 46q308 0);"/>
+                    <Edge cubics="!96 -10(;97,-30 119,-77 158,-150q96 -10Q98 -41q158 -150);"/>
+                    <Edge cubics="!-64 -45(;-63,-71 -83,-122 -125,-197q-64 -45Q-62 -84q-125 -197);"/>
+                    <Edge cubics="!-179 88(;-198,71 -250,54 -334,39q-179 88Q-207 63q-334 39);"/>
+                    <Edge cubics="!-159 267(;-182,275 -223,314 -276,379q-159 267Q-194 279q-276 379);"/>
+                    <Edge cubics="!33 343(;44,364 51,417 53,504q33 343Q50 374q53 504);"/>
+                    <Edge cubics="!183 212(;206,207 259,215 343,236q183 212Q217 204q343 236);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="2" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.5">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!499 -172S4[522 -194 638 -240!186 -310[188 -341 248 -450!78 577[95 608 98 738!535 205[569 197 695 229!-215 -419[-213 -458 -276 -571!-617 -83[-645 -108 -772 -132!-543 432[-578 444 -660 544"/>
+                    <Edge cubics="!499 -172(;514,-187 561,-209 638,-240q499 -172Q522 -194q638 -240);"/>
+                    <Edge cubics="!186 -310(;187,-330 209,-377 248,-450q186 -310Q188 -341q248 -450);"/>
+                    <Edge cubics="!-215 -419(;-214,-445 -234,-496 -276,-571q-215 -419Q-213 -458q-276 -571);"/>
+                    <Edge cubics="!-617 -83(;-636,-100 -688,-117 -772,-132q-617 -83Q-645 -108q-772 -132);"/>
+                    <Edge cubics="!-543 432(;-566,440 -607,479 -660,544q-543 432Q-578 444q-660 544);"/>
+                    <Edge cubics="!78 577(;89,598 96,651 98,738q78 577Q95 608q98 738);"/>
+                    <Edge cubics="!535 205(;558,200 611,208 695,229q535 205Q569 197q695 229);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.5">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!339 -591[341 -622 566 -1081!716 -304[739 -326 1210 -484!169 747[#B9.9B #309.47 189 902!189 902[#BC.EE #388.F9 199 1211!699 237[733 229 1368 467!-292 -643[-290 -682 -396 -1310!-830 -195[-858 -220 -1632 -535!-696 539[-724 549 -784 617
+!-784 617[-797 631 -1229 765"/>
+                    <Edge cubics="!-292 -643(;-291,-669 -325,-891 -396,-1310q-292 -643Q-290 -682q-396 -1310);"/>
+                    <Edge cubics="!339 -591(;340,-612 416,-775 566,-1081q339 -591Q341 -622q566 -1081);"/>
+                    <Edge cubics="!716 -304(;731,-319 896,-379 1210,-484q716 -304Q739 -326q1210 -484);"/>
+                    <Edge cubics="!169 747(;180,768 187,819 189,902q169 747Q186 777q189 902);"/>
+                    <Edge cubics="!699 237(;722,232 945,308 1368,467q699 237Q733 229q1368 467);"/>
+                    <Edge cubics="!-696 539(;-715,546 -745,572 -784,617q-696 539Q-724 549q-784 617);"/>
+                    <Edge cubics="!189 902(;189,904 192,1007 199,1211q189 902Q189 905q199 1211);"/>
+                    <Edge cubics="!-784 617(;-793,626 -941,676 -1229,765q-784 617Q-797 631q-1229 765);"/>
+                    <Edge cubics="!-830 -195(;-849,-212 -1116,-325 -1632,-535q-830 -195Q-858 -220q-1632 -535);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="8" duration="3" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.5">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="
+!1004 -414S4[#445.3E #FFFE43.2B 1210 -484!455.5 -853[#1F5.7E -949.40625 566 -1081!989 327.5[#473.A2 #17D.68 1368 467!191.5 988[#C2.32 #429.07 199 1211!-343.5 -996[#FFFE92.A9 #FFFB97.A3 -396 -1310!-1154 -338.5[#FFFAC4.24 #FFFE5F.E5 -1632
+ -535!-965 681.5[#FFFBD4.28 #2CB.03 -1229 765"/>
+                    <Edge cubics="!-292 -643(;-291,-661 -308,-776 -343,-996q-292 -643Q-291 -671q-343 -996);"/>
+                    <Edge cubics="!-343 -996(;-357,-1079 -375,-1186 -396,-1310q-343 -996 -396 -1310);"/>
+                    <Edge cubics="!339 -591(;340,-606 378,-693 456,-853q339 -591Q340 -613q456 -853);"/>
+                    <Edge cubics="!456 -853(;486,-916 523,-993 566,-1081q456 -853 566 -1081);"/>
+                    <Edge cubics="!716 -304(;721,-309 740,-318 777,-332q716 -304 777 -332);"/>
+                    <Edge cubics="!777 -332(;823,-351 899,-379 1004,-414q777 -332 1004 -414);"/>
+                    <Edge cubics="!1004 -414(;1064,-435 1132,-458 1210,-484q1004 -414 1210 -484);"/>
+                    <Edge cubics="!169 747(;180,768 187,819 189,902q169 747Q186 777q189 902);"/>
+                    <Edge cubics="!699 237(;714,234 812,264 989,328q699 237Q721 232q989 328);"/>
+                    <Edge cubics="!989 328(;1093,364 1218,410 1368,467q989 328 1368 467);"/>
+                    <Edge cubics="!-696 539(;-715,546 -745,572 -784,617q-696 539Q-724 549q-784 617);"/>
+                    <Edge cubics="!189 902(;189,903 190,933 192,988q189 902 192 988);"/>
+                    <Edge cubics="!192 988(;194,1042 196,1115 199,1211q192 988 199 1211);"/>
+                    <Edge cubics="!-784 617(;-790,623 -849,644 -965,682q-784 617Q-792 626q-965 682);"/>
+                    <Edge cubics="!-965 682(;-1032,704 -1121,732 -1229,765q-965 682 -1229 765);"/>
+                    <Edge cubics="!-830 -195(;-842,-205 -948,-253 -1154,-338q-830 -195Q-847 -211q-1154 -338);"/>
+                    <Edge cubics="!-1154 -338(;-1273,-389 -1434,-455 -1632,-535q-1154 -338 -1632 -535);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="small" color="#FF800A" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="6" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#990000"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.5">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="
+!352 111|117 106!117 106|170 -11!170 -11|49 68!49 68|45 -159!45 -159|-43 64!-43 64|-231 -124!-231 -124/-132 127!-132 127|-353 201!-353 201|-119 254!-119 254|-161 463!-161 463|29 283!29 283|231 394!231 394|137 172!137 172|352 111"/>
+                    <Edge cubics="!-580 -493(;-580,-493 -527,-610 -527,-610q-580 -493 -527 -610);"/>
+                    <Edge cubics="!-648 -531(;-648,-531 -652,-758 -652,-758q-648 -531 -652 -758);"/>
+                    <Edge cubics="!-527 -610(;-527,-610 -648,-531 -648,-531q-527 -610 -648 -531);"/>
+                    <Edge cubics="!-928 -723(;-928,-723 -829,-472 -829,-472q-928 -723 -829 -472);"/>
+                    <Edge cubics="!-740 -535(;-740,-535 -928,-723 -928,-723q-740 -535 -928 -723);"/>
+                    <Edge cubics="!-816 -345(;-816,-345 -858,-136 -858,-136q-816 -345 -858 -136);"/>
+                    <Edge cubics="!-1050 -398(;-1050,-398 -816,-345 -816,-345q-1050 -398 -816 -345);"/>
+                    <Edge cubics="!-829 -472(;-829,-472 -1050,-398 -1050,-398q-829 -472 -1050 -398);"/>
+                    <Edge cubics="!-858 -136(;-858,-136 -668,-316 -668,-316q-858 -136 -668 -316);"/>
+                    <Edge cubics="!-652 -758(;-652,-758 -740,-535 -740,-535q-652 -758 -740 -535);"/>
+                    <Edge cubics="!-345 -488(;-345,-488 -580,-493 -580,-493q-345 -488 -580 -493);"/>
+                    <Edge cubics="!-668 -316(;-668,-316 -466,-205 -466,-205q-668 -316 -466 -205);"/>
+                    <Edge cubics="!-466 -205(;-466,-205 -560,-427 -560,-427q-466 -205 -560 -427);"/>
+                    <Edge cubics="!-560 -427(;-560,-427 -345,-488 -345,-488q-560 -427 -345 -488);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="medium" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="2" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="2" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape selected="true">
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFF00"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.5">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="
+!124 -174S1|112 -838!112 -838|-146 -187!-146 -187|-695 -736!-695 -736/-405 -2!-405 -2|-1050 214!-1050 214|-368 367!-368 367|-490 977!-490 977|63 453!63 453|655 778!655 778|379 129!379 129|1009 -50!1009 -50|321 -64!321 -64|477 -407!477
+ -407|124 -174"/>
+                    <Edge cubics="!321 -64(;321,-64 477,-407 477,-407q321 -64 477 -407);"/>
+                    <Edge cubics="!124 -174(;124,-174 112,-838 112,-838q124 -174 112 -838);"/>
+                    <Edge cubics="!477 -407(;477,-407 124,-174 124,-174q477 -407 124 -174);"/>
+                    <Edge cubics="!-695 -736(;-695,-736 -405,-2 -405,-2q-695 -736 -405 -2);"/>
+                    <Edge cubics="!-146 -187(;-146,-187 -695,-736 -695,-736q-146 -187 -695 -736);"/>
+                    <Edge cubics="!-368 367(;-368,367 -490,977 -490,977q-368 367 -490 977);"/>
+                    <Edge cubics="!-1050 214(;-1050,214 -368,367 -368,367q-1050 214 -368 367);"/>
+                    <Edge cubics="!-405 -2(;-405,-2 -1050,214 -1050,214q-405 -2 -1050 214);"/>
+                    <Edge cubics="!-490 977(;-490,977 63,453 63,453q-490 977 63 453);"/>
+                    <Edge cubics="!112 -838(;112,-838 -146,-187 -146,-187q112 -838 -146 -187);"/>
+                    <Edge cubics="!1009 -50(;1009,-50 321,-64 321,-64q1009 -50 321 -64);"/>
+                    <Edge cubics="!63 453(;63,453 655,778 655,778q63 453 655 778);"/>
+                    <Edge cubics="!655 778(;655,778 379,129 379,129q655 778 379 129);"/>
+                    <Edge cubics="!379 129(;379,129 1009,-50 1009,-50q379 129 1009 -50);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="big" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="4" duration="2" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#990000"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="0.5">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="
+!235 -397|215 -1477!215 -1477|-205 -417!-205 -417|-1098 -1311!-1098 -1311/-625 -117!-625 -117|-1675 234!-1675 234|-565 483!-565 483|-764 1476!-764 1476|135 623!135 623|991 1164!991 1164|575 183!575 183|1674 -97!1674 -97|555 -217!555 -217
+|808 -775!808 -775|235 -397"/>
+                    <Edge cubics="!-100 -40(;-100,-40 999,-320 999,-320q-100 -40 999 -320);"/>
+                    <Edge cubics="!999 -320(;999,-320 -120,-440 -120,-440q999 -320 -120 -440);"/>
+                    <Edge cubics="!-440 -620(;-440,-620 -460,-1700 -460,-1700q-440 -620 -460 -1700);"/>
+                    <Edge cubics="!-460 -1700(;-460,-1700 -880,-640 -880,-640q-460 -1700 -880 -640);"/>
+                    <Edge cubics="!-880 -640(;-880,-640 -1773,-1534 -1773,-1534q-880 -640 -1773 -1534);"/>
+                    <Edge cubics="!-1300 -340(;-1300,-340 -1773,-1534 -1773,-1534q-1300 -340 -1773 -1534);"/>
+                    <Edge cubics="!-1439 1253(;-1439,1253 -540,400 -540,400q-1439 1253 -540 400);"/>
+                    <Edge cubics="!-1240 260(;-1240,260 -1439,1253 -1439,1253q-1240 260 -1439 1253);"/>
+                    <Edge cubics="!-2350 11(;-2350,11 -1240,260 -1240,260q-2350 11 -1240 260);"/>
+                    <Edge cubics="!-120 -440(;-120,-440 133,-998 133,-998q-120 -440 133 -998);"/>
+                    <Edge cubics="!133 -998(;133,-998 -440,-620 -440,-620q133 -998 -440 -620);"/>
+                    <Edge cubics="!-1300 -340(;-1300,-340 -2350,11 -2350,11q-1300 -340 -2350 11);"/>
+                    <Edge cubics="!-540 400(;-540,400 316,941 316,941q-540 400 316 941);"/>
+                    <Edge cubics="!316 941(;316,941 -100,-40 -100,-40q316 941 -100 -40);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="6" duration="5" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

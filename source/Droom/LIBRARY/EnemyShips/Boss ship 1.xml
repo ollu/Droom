@@ -1,0 +1,467 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EnemyShips/Boss ship 1" itemID="4a0318f0-00000401" sourceFlashFilepath=".\AlienSpaceShip.fla" sourceLibraryItemHRef="Boss" sourceLastModified="1241712976" lastModified="1241765595" lastUniqueIdentifier="8">
+  <timeline>
+    <DOMTimeline name="Boss ship 1" currentFrame="46" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-147&lt;/guideline&gt;&lt;guideline direction="h"&gt;56&lt;/guideline&gt;&lt;/guidelines&gt;'>
+      <layers>
+        <DOMLayer name="Aliens" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="50" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/AlienHead" name="" centerPoint3DX="0.7" centerPoint3DY="-42.35">
+                  <matrix>
+                    <Matrix a="1.22129821777344" d="1.22129821777344" tx="0.7" ty="-42.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="cock pit" color="#4F80FF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="50" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!636 -994[861 -831 894 -612!894 -612[#1F.7E #FFFE6F.3E -894 -612!-894 -612[-861 -831 -637 -994!-637 -994[-373 -1184 0 -1184!0 -1184[373 -1184 636 -994"/>
+                    <Edge cubics="!0 -1184(;249,-1184 461,-1121 636,-994q0 -1184Q373 -1184q636 -994);"/>
+                    <Edge cubics="!636 -994(;786,-885 872,-758 894,-612q636 -994Q861 -831q894 -612);"/>
+                    <Edge cubics="!-894 -612(;-872,-758 -786,-885 -637,-994q-894 -612Q-861 -831q-637 -994);"/>
+                    <Edge cubics="!-637 -994(;-461,-1121 -249,-1184 0,-1184q-637 -994Q-373 -1184q0 -1184);"/>
+                    <Edge cubics="!-894 -612(;-277,-471 319,-471 894,-612q-894 -612Q31 -401q894 -612);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ribbon dots" color="#808080" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="4" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#666666"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!2447 113[2384 105 2356 143!2356 143[2327 181 2350 243!2350 243[2373 305 2433 354!2433 354[2493 403 2556 411!2556 411[2619 419 2648 381!2648 381[2677 343 2654 281!2654 281[2631 219 2571 170!2571 170[2510 121 2447 113!1657 366[1586 359
+ 1549 409!1549 409[1513 459 1534 536!1534 536[1553 612 1618 670!1618 670[1683 727 1755 733!1755 733[1827 738 1863 690!1863 690[1900 641 1881 564!1881 564[1861 487 1794 430!1794 430[1730 371 1657 366"/>
+                    <Edge fillStyle1="1" edges="
+!730 835[672 894 589 894!589 894[506 894 447 835!447 835[389 777 389 694!389 694[389 611 447 552!447 552[506 494 589 494!589 494[672 494 730 552!730 552[789 611 789 694!789 694[789 777 730 835!-700 867[-783 867 -842 808!-842 808[-900
+ 750 -900 667!-900 667[-900 584 -842 525!-842 525[-783 467 -700 467!-700 467[-617 467 -559 525!-559 525[-500 584 -500 667!-500 667[-500 750 -559 808!-559 808[-617 867 -700 867!-1600 496[-1620 572 -1686 630!-1686 630[-1751 689 -1823 694
+!-1823 694[-1895 701 -1931 651!-1931 651[-1968 601 -1947 523!-1947 523[-1927 448 -1863 390!-1863 390[-1798 332 -1725 326!-1725 326[-1654 322 -1618 370!-1618 370[-1580 419 -1600 496!-2540 53[-2477 45 -2448 83!-2448 83[-2419 121 -2442 183
+!-2442 183[-2465 245 -2525 294!-2525 294[-2586 343 -2649 351!-2649 351[-2712 359 -2740 321!-2740 321[-2769 283 -2746 221!-2746 221[-2723 159 -2663 110!-2663 110[-2603 61 -2540 53"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="4" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#666666"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#FFFFFF" alpha="0.592156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!2556 411S1[2619 419 2648 381!2648 381[2677 343 2654 281!2654 281[2631 219 2571 170!2571 170[2510 121 2447 113!2447 113[2384 105 2356 143!2356 143[2327 181 2350 243!2350 243[2373 305 2433 354!2433 354[2493 403 2556 411!1863 690[1900 641
+ 1881 564!1881 564[1861 487 1794 430!1794 430[1730 371 1657 366!1657 366[1586 359 1549 409!1549 409[1513 459 1534 536!1534 536[1553 612 1618 670!1618 670[1683 727 1755 733!1755 733[1827 738 1863 690"/>
+                    <Edge fillStyle1="1" edges="
+!589 894S2[506 894 447 835!447 835[389 777 389 694!389 694[389 611 447 552!447 552[506 494 589 494!589 494[672 494 730 552!730 552[789 611 789 694!789 694[789 777 730 835!730 835[672 894 589 894!-559 525[-500 584 -500 667!-500 667[-500
+ 750 -559 808!-559 808[-617 867 -700 867!-700 867[-783 867 -842 808!-842 808[-900 750 -900 667!-900 667[-900 584 -842 525!-842 525[-783 467 -700 467!-700 467[-617 467 -559 525!-1600 496[-1620 572 -1686 630!-1686 630[-1751 689 -1823 694
+!-1823 694[-1895 701 -1931 651!-1931 651[-1968 601 -1947 523!-1947 523[-1927 448 -1863 390!-1863 390[-1798 332 -1725 326!-1725 326[-1654 322 -1618 370!-1618 370[-1580 419 -1600 496"/>
+                    <Edge fillStyle1="2" edges="
+!-2448 83S2[-2419 121 -2442 183!-2442 183[-2465 245 -2525 294!-2525 294[-2586 343 -2649 351!-2649 351[-2712 359 -2740 321!-2740 321[-2769 283 -2746 221!-2746 221[-2723 159 -2663 110!-2663 110[-2603 61 -2540 53!-2540 53[-2477 45 -2448
+ 83"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#666666"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#FFFFFF" alpha="0.592156862745098"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#999999" alpha="0.592156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!2648 381[2677 343 2654 281!2654 281[2631 219 2571 170!2571 170[2510 121 2447 113!2447 113[2384 105 2356 143!2356 143[2327 181 2350 243!2350 243[2373 305 2433 354!2433 354[2493 403 2556 411!2556 411[2619 419 2648 381!1881 564[1861 487
+ 1794 430!1794 430[1730 371 1657 366!1657 366[1586 359 1549 409!1549 409[1513 459 1534 536!1534 536[1553 612 1618 670!1618 670[1683 727 1755 733!1755 733[1827 738 1863 690!1863 690[1900 641 1881 564"/>
+                    <Edge fillStyle1="1" edges="
+!447 835[389 777 389 694!389 694[389 611 447 552!447 552[506 494 589 494!589 494[672 494 730 552!730 552[789 611 789 694!789 694[789 777 730 835!730 835[672 894 589 894!589 894[506 894 447 835!-500 667[-500 750 -559 808!-559 808[-617
+ 867 -700 867!-700 867[-783 867 -842 808!-842 808[-900 750 -900 667!-900 667[-900 584 -842 525!-842 525[-783 467 -700 467!-700 467[-617 467 -559 525!-559 525[-500 584 -500 667"/>
+                    <Edge fillStyle1="2" edges="
+!-1600 496[-1620 572 -1686 630!-1686 630[-1751 689 -1823 694!-1823 694[-1895 701 -1931 651!-1931 651[-1968 601 -1947 523!-1947 523[-1927 448 -1863 390!-1863 390[-1798 332 -1725 326!-1725 326[-1654 322 -1618 370!-1618 370[-1580 419 -1600
+ 496"/>
+                    <Edge fillStyle1="3" edges="
+!-2442 183[-2465 245 -2525 294!-2525 294[-2586 343 -2649 351!-2649 351[-2712 359 -2740 321!-2740 321[-2769 283 -2746 221!-2746 221[-2723 159 -2663 110!-2663 110[-2603 61 -2540 53!-2540 53[-2477 45 -2448 83!-2448 83[-2419 121 -2442 183"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="14" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#666666"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#FFFFFF" alpha="0.592156862745098"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#999999" alpha="0.592156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!2654 281[2631 219 2571 170!2571 170[2510 121 2447 113!2447 113[2384 105 2356 143!2356 143[2327 181 2350 243!2350 243[2373 305 2433 354!2433 354[2493 403 2556 411!2556 411[2619 419 2648 381!2648 381[2677 343 2654 281!1794 430[1730 371
+ 1657 366!1657 366[1586 359 1549 409!1549 409[1513 459 1534 536!1534 536[1553 612 1618 670!1618 670[1683 727 1755 733!1755 733[1827 738 1863 690!1863 690[1900 641 1881 564!1881 564[1861 487 1794 430"/>
+                    <Edge fillStyle1="1" edges="
+!389 694[389 611 447 552!447 552[506 494 589 494!589 494[672 494 730 552!730 552[789 611 789 694!789 694[789 777 730 835!730 835[672 894 589 894!589 894[506 894 447 835!447 835[389 777 389 694"/>
+                    <Edge fillStyle1="2" edges="
+!-559 808[-617 867 -700 867!-700 867[-783 867 -842 808!-842 808[-900 750 -900 667!-900 667[-900 584 -842 525!-842 525[-783 467 -700 467!-700 467[-617 467 -559 525!-559 525[-500 584 -500 667!-500 667[-500 750 -559 808"/>
+                    <Edge fillStyle1="3" edges="
+!-1600 496[-1620 572 -1686 630!-1686 630[-1751 689 -1823 694!-1823 694[-1895 701 -1931 651!-1931 651[-1968 601 -1947 523!-1947 523[-1927 448 -1863 390!-1863 390[-1798 332 -1725 326!-1725 326[-1654 322 -1618 370!-1618 370[-1580 419 -1600
+ 496!-2525 294[-2586 343 -2649 351!-2649 351[-2712 359 -2740 321!-2740 321[-2769 283 -2746 221!-2746 221[-2723 159 -2663 110!-2663 110[-2603 61 -2540 53!-2540 53[-2477 45 -2448 83!-2448 83[-2419 121 -2442 183!-2442 183[-2465 245 -2525
+ 294"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#666666"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#FFFFFF" alpha="0.592156862745098"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#999999" alpha="0.592156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!2571 170S1[2510 121 2447 113!2447 113[2384 105 2356 143!2356 143[2327 181 2350 243!2350 243[2373 305 2433 354!2433 354[2493 403 2556 411!2556 411[2619 419 2648 381!2648 381[2677 343 2654 281!2654 281[2631 219 2571 170!1657 366[1586 359
+ 1549 409!1549 409[1513 459 1534 536!1534 536[1553 612 1618 670!1618 670[1683 727 1755 733!1755 733[1827 738 1863 690!1863 690[1900 641 1881 564!1881 564[1861 487 1794 430!1794 430[1730 371 1657 366"/>
+                    <Edge fillStyle1="2" edges="
+!447 552S2[506 494 589 494!589 494[672 494 730 552!730 552[789 611 789 694!789 694[789 777 730 835!730 835[672 894 589 894!589 894[506 894 447 835!447 835[389 777 389 694!389 694[389 611 447 552"/>
+                    <Edge fillStyle1="3" edges="
+!-700 867S2[-783 867 -842 808!-842 808[-900 750 -900 667!-900 667[-900 584 -842 525!-842 525[-783 467 -700 467!-700 467[-617 467 -559 525!-559 525[-500 584 -500 667!-500 667[-500 750 -559 808!-559 808[-617 867 -700 867!-1600 496[-1620
+ 572 -1686 630!-1686 630[-1751 689 -1823 694!-1823 694[-1895 701 -1931 651!-1931 651[-1968 601 -1947 523!-1947 523[-1927 448 -1863 390!-1863 390[-1798 332 -1725 326!-1725 326[-1654 322 -1618 370!-1618 370[-1580 419 -1600 496!-2649 351
+[-2712 359 -2740 321!-2740 321[-2769 283 -2746 221!-2746 221[-2723 159 -2663 110!-2663 110[-2603 61 -2540 53!-2540 53[-2477 45 -2448 83!-2448 83[-2419 121 -2442 183!-2442 183[-2465 245 -2525 294!-2525 294[-2586 343 -2649 351"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="24" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#666666"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#FFFFFF" alpha="0.592156862745098"/>
+                    </FillStyle>
+                    <FillStyle index="3">
+                      <SolidColor color="#999999" alpha="0.592156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!2447 113S1[2384 105 2356 143!2356 143[2327 181 2350 243!2350 243[2373 305 2433 354!2433 354[2493 403 2556 411!2556 411[2619 419 2648 381!2648 381[2677 343 2654 281!2654 281[2631 219 2571 170!2571 170[2510 121 2447 113"/>
+                    <Edge fillStyle0="2" edges="
+!1863 690S1[1900 641 1881 564!1881 564[1861 487 1794 430!1794 430[1730 371 1657 366!1657 366[1586 359 1549 409!1549 409[1513 459 1534 536!1534 536[1553 612 1618 670!1618 670[1683 727 1755 733!1755 733[1827 738 1863 690"/>
+                    <Edge fillStyle1="3" edges="
+!589 494S2[672 494 730 552!730 552[789 611 789 694!789 694[789 777 730 835!730 835[672 894 589 894!589 894[506 894 447 835!447 835[389 777 389 694!389 694[389 611 447 552!447 552[506 494 589 494!-559 525[-500 584 -500 667!-500 667[-500
+ 750 -559 808!-559 808[-617 867 -700 867!-700 867[-783 867 -842 808!-842 808[-900 750 -900 667!-900 667[-900 584 -842 525!-842 525[-783 467 -700 467!-700 467[-617 467 -559 525!-1600 496[-1620 572 -1686 630!-1686 630[-1751 689 -1823 694
+!-1823 694[-1895 701 -1931 651!-1931 651[-1968 601 -1947 523!-1947 523[-1927 448 -1863 390!-1863 390[-1798 332 -1725 326!-1725 326[-1654 322 -1618 370!-1618 370[-1580 419 -1600 496!-2740 321[-2769 283 -2746 221!-2746 221[-2723 159 -2663
+ 110!-2663 110[-2603 61 -2540 53!-2540 53[-2477 45 -2448 83!-2448 83[-2419 121 -2442 183!-2442 183[-2465 245 -2525 294!-2525 294[-2586 343 -2649 351!-2649 351[-2712 359 -2740 321"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" duration="5" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0.592156862745098"/>
+                    </FillStyle>
+                    <FillStyle index="2">
+                      <SolidColor color="#999999" alpha="0.592156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!2556 411[2619 419 2648 381!2648 381[2677 343 2654 281!2654 281[2631 219 2571 170!2571 170[2510 121 2447 113!2447 113[2384 105 2356 143!2356 143[2327 181 2350 243!2350 243[2373 305 2433 354!2433 354[2493 403 2556 411"/>
+                    <Edge fillStyle0="2" edges="
+!1881 564[1861 487 1794 430!1794 430[1730 371 1657 366!1657 366[1586 359 1549 409!1549 409[1513 459 1534 536!1534 536[1553 612 1618 670!1618 670[1683 727 1755 733!1755 733[1827 738 1863 690!1863 690[1900 641 1881 564"/>
+                    <Edge fillStyle1="2" edges="
+!730 552[789 611 789 694!789 694[789 777 730 835!730 835[672 894 589 894!589 894[506 894 447 835!447 835[389 777 389 694!389 694[389 611 447 552!447 552[506 494 589 494!589 494[672 494 730 552!-500 667[-500 750 -559 808!-559 808[-617
+ 867 -700 867!-700 867[-783 867 -842 808!-842 808[-900 750 -900 667!-900 667[-900 584 -842 525!-842 525[-783 467 -700 467!-700 467[-617 467 -559 525!-559 525[-500 584 -500 667!-1600 496[-1620 572 -1686 630!-1686 630[-1751 689 -1823 694
+!-1823 694[-1895 701 -1931 651!-1931 651[-1968 601 -1947 523!-1947 523[-1927 448 -1863 390!-1863 390[-1798 332 -1725 326!-1725 326[-1654 322 -1618 370!-1618 370[-1580 419 -1600 496!-2746 221[-2723 159 -2663 110!-2663 110[-2603 61 -2540
+ 53!-2540 53[-2477 45 -2448 83!-2448 83[-2419 121 -2442 183!-2442 183[-2465 245 -2525 294!-2525 294[-2586 343 -2649 351!-2649 351[-2712 359 -2740 321!-2740 321[-2769 283 -2746 221"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="34" duration="16" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#999999" alpha="0.592156862745098"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!2648 381[2677 343 2654 281!2654 281[2631 219 2571 170!2571 170[2510 121 2447 113!2447 113[2384 105 2356 143!2356 143[2327 181 2350 243!2350 243[2373 305 2433 354!2433 354[2493 403 2556 411!2556 411[2619 419 2648 381!1794 430[1730 371
+ 1657 366!1657 366[1586 359 1549 409!1549 409[1513 459 1534 536!1534 536[1553 612 1618 670!1618 670[1683 727 1755 733!1755 733[1827 738 1863 690!1863 690[1900 641 1881 564!1881 564[1861 487 1794 430"/>
+                    <Edge fillStyle1="1" edges="
+!789 694[789 777 730 835!730 835[672 894 589 894!589 894[506 894 447 835!447 835[389 777 389 694!389 694[389 611 447 552!447 552[506 494 589 494!589 494[672 494 730 552!730 552[789 611 789 694!-559 808[-617 867 -700 867!-700 867[-783
+ 867 -842 808!-842 808[-900 750 -900 667!-900 667[-900 584 -842 525!-842 525[-783 467 -700 467!-700 467[-617 467 -559 525!-559 525[-500 584 -500 667!-500 667[-500 750 -559 808!-1600 496[-1620 572 -1686 630!-1686 630[-1751 689 -1823 694
+!-1823 694[-1895 701 -1931 651!-1931 651[-1968 601 -1947 523!-1947 523[-1927 448 -1863 390!-1863 390[-1798 332 -1725 326!-1725 326[-1654 322 -1618 370!-1618 370[-1580 419 -1600 496!-2663 110[-2603 61 -2540 53!-2540 53[-2477 45 -2448 83
+!-2448 83[-2419 121 -2442 183!-2442 183[-2465 245 -2525 294!-2525 294[-2586 343 -2649 351!-2649 351[-2712 359 -2740 321!-2740 321[-2769 283 -2746 221!-2746 221[-2723 159 -2663 110"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="ribbon 1" color="#4FFFFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="50" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#1B1B1B"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="
+!2100 -185[#A51.6C #92.5 1766.5 284.5!1766.5 284.5[#37B.B5 #1A6.C2 50.5 408.5!50.5 408.5[#FFFCE9.11 #18A.0B -1723 247!-1723 247[#FFF5A1.44 #64.03 -2262 -175!-2262 -175|-2604 -3!-2604 -3[#FFF328.5 #1AE.AA -2148.5 714!-2148.5 714[#FFFC0E.F3
+ #3E4.FF 4.5 996.5!4.5 996.5[#3F9.F1 #3E4.39 2131.5 726.5!2131.5 726.5[#CAD.1D #1C8.AA 2443 -26!2443 -26|2100 -185"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Bottom ribbon" color="#FF800A" locked="true" autoNamed="false" layerType="folder">
+          <frames/>
+        </DOMLayer>
+        <DOMLayer name="mask" color="#FF4FFF" parentLayerIndex="4" locked="true" autoNamed="false" layerType="mask">
+          <frames>
+            <DOMFrame index="0" duration="50" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!771 1322S2[-16.75 #666.B5 -776 1313!-776 1313|-862 1135!-862 1135[#16.AF #520.15 854 1135!854 1135|771 1322"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="mark" color="#9933CC" parentLayerIndex="5" locked="true" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" tweenType="motion" motionTweenSync="true" motionTweenSnap="true" keyMode="24065">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/AlienLamp" name="" selected="true" centerPoint3DY="65.35">
+                  <matrix>
+                    <Matrix ty="65.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/AlienLamp" name="" centerPoint3DX="39.3" centerPoint3DY="65.35">
+                  <matrix>
+                    <Matrix tx="39.3" ty="65.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="10" duration="10" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="20" duration="9" tweenType="motion" motionTweenSync="true" motionTweenSnap="true" keyMode="24065">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/AlienLamp" name="" selected="true" centerPoint3DX="-40.5" centerPoint3DY="65.35">
+                  <matrix>
+                    <Matrix tx="-40.5" ty="65.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="29" duration="5" tweenType="motion" motionTweenSync="true" motionTweenSnap="true" keyMode="24065">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/AlienLamp" name="" selected="true" centerPoint3DY="65.35">
+                  <matrix>
+                    <Matrix ty="65.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="34" duration="10" tweenType="motion" motionTweenSync="true" motionTweenSnap="true" keyMode="24065">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/AlienLamp" name="" selected="true" centerPoint3DX="-40.7" centerPoint3DY="65.35">
+                  <matrix>
+                    <Matrix tx="-40.7" ty="65.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="44" duration="5" tweenType="motion" motionTweenSync="true" motionTweenSnap="true" keyMode="24065">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/AlienLamp" name="" selected="true" centerPoint3DX="40.7" centerPoint3DY="65.35">
+                  <matrix>
+                    <Matrix tx="40.7" ty="65.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="49" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/AlienLamp" name="" selected="true" centerPoint3DY="65.35">
+                  <matrix>
+                    <Matrix ty="65.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="bg" color="#4FFF4F" parentLayerIndex="4" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="50" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="
+!771 1322[-16.75 #666.B5 -776 1313!-776 1313|-862 1135!-862 1135[#16.AF #520.15 854 1135!854 1135|771 1322"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="outLine" color="#FF4FFF" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="50" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0.0004425048828125" b="-0.083953857421875" c="0.08428955078125" d="0.0004425048828125" tx="-2.3" ty="7.65"/>
+                        </matrix>
+                        <GradientEntry color="#EEEEEE" ratio="0"/>
+                        <GradientEntry color="#AAAAAA" ratio="0.250980392156863"/>
+                        <GradientEntry color="#EEEEEE" ratio="0.772549019607843"/>
+                        <GradientEntry color="#666666" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="1.5">
+                        <fill>
+                          <SolidColor/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle1="1" strokeStyle="1" edges="
+!693 -1020[921 -855 967.5 -633.5!967.5 -633.5[#60D.6D #FFFE39.45 2167.5 -197.5!2167.5 -197.5[#AE1.B7 #3B.DF 2860.5 304!2860.5 304[#B77.34 #224.26 2288 815!2288 815[#668.E2 #439.AC 920 1145.5!920 1145.5/815 1354!815 1354[480 1481 211 1518
+!211 1518[27 1544 -153 1529!-153 1529[-448 1506 -815 1354!-815 1354/-920 1133.5!-920 1133.5[-982.65625 #465.52 -1042 1116!-1042 1116[-1391 1061 -1894 911!-1894 911[#FFF506.01 #280.1F -2938.5 419!-2938.5 419[-3067 #C5.AF -2437 -127.5!-2437
+ -127.5[#FFF8F1.03 #FFFE3B.51 -1424 -539.5!-1424 -539.5[#FFFBEE.F5 #FFFD8D.DE -968 -633.5!-968 -633.5[#FFFC66.2B #FFFCA9.E1 -693 -1020!-693 -1020[-406 -1228 0 -1228!0 -1228[406 -1228 693 -1020"/>
+                    <Edge cubics="!0 -1228(;271,-1228 502,-1159 693,-1020q0 -1228Q406 -1228q693 -1020);"/>
+                    <Edge cubics="!693 -1020(;845,-910 937,-781 968,-633q693 -1020Q921 -855q968 -633);"/>
+                    <Edge cubics="!-968 -633(;-937,-780 -846,-909 -693,-1020q-968 -633Q-922 -854q-693 -1020);"/>
+                    <Edge cubics="!-920 1134(;-1256,1090 -1543,1016 -1894,911q-920 1134 -1042 1116Q-1391 1061q-1894 911);"/>
+                    <Edge cubics="!-693 -1020(;-502,-1159 -271,-1228 0,-1228q-693 -1020Q-406 -1228q0 -1228);"/>
+                    <Edge cubics="!920 1146(;920,1146 815,1354 815,1354q920 1146 815 1354);"/>
+                    <Edge cubics="!-815 1354(;-815,1354 -920,1134 -920,1134q-815 1354 -920 1134);"/>
+                    <Edge cubics="!211 1521(;90,1538 -31,1542 -153,1532q211 1518Q27 1544q-153 1529);"/>
+                    <Edge cubics="!968 -633(;1355,-514 1755,-369 2168,-197q968 -633Q1549 -455q2168 -197);"/>
+                    <Edge cubics="!2861 304(;2910,467 2719,637 2288,815q2861 304Q2935 548q2288 815);"/>
+                    <Edge cubics="!2288 815(;1857,993 1401,1103 920,1146q2288 815Q1641 1082q920 1146);"/>
+                    <Edge cubics="!2168 -197(;2580,-26 2811,141 2861,304q2168 -197Q2786 60q2861 304);"/>
+                    <Edge cubics="!-1424 -539(;-1169,-597 -1017,-628 -968,-633q-1424 -539Q-1041 -626q-968 -633);"/>
+                    <Edge cubics="!-2437 -127(;-2017,-344 -1679,-482 -1424,-539q-2437 -127Q-1807 -453q-1424 -539);"/>
+                    <Edge cubics="!-1894 911(;-2505,730 -2853,566 -2938,419q-1894 911Q-2810 640q-2938 419);"/>
+                    <Edge cubics="!-2938 419(;-3024,272 -2857,90 -2437,-127q-2938 419Q-3067 198q-2437 -127);"/>
+                    <Edge cubics="!815 1354(;592,1439 390,1493 211,1518q815 1354Q480 1481q211 1518);"/>
+                    <Edge cubics="!-153 1529(;-350,1514 -570,1455 -815,1354q-153 1529Q-448 1506q-815 1354);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

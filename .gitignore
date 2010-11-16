@@ -3,3 +3,5 @@ source/.settings/
 source/.actionScriptProperties
 source/.project
 html-template/
+.project
+.settings/

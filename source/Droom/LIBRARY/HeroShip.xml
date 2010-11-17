@@ -1,12 +1,12 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HeroShip" itemID="4ce2746d-000004e3" linkageExportForAS="true" linkageClassName="nu.fickla.droom.display.HeroShip" sourceLibraryItemHRef="Symbol 1" lastModified="1289909630" lastUniqueIdentifier="2" isSpriteSubclass="true">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="HeroShip" itemID="4ce2746d-000004e3" linkageExportForAS="true" linkageClassName="nu.fickla.droom.display.HeroShip" sourceLibraryItemHRef="Symbol 1" lastModified="1289988894" lastUniqueIdentifier="2" isSpriteSubclass="true">
   <timeline>
     <DOMTimeline name="HeroShip">
       <layers>
-        <DOMLayer name="Ship" color="#4FFF4F" locked="true" current="true" isSelected="true" autoNamed="false">
+        <DOMLayer name="Ship" color="#4FFF4F" locked="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Resources/ship-ship" name="" selected="true">
+                <DOMSymbolInstance libraryItemName="Resources/ship-ship" name="" selected="true" centerPoint3DX="-1.65">
                   <matrix>
                     <Matrix tx="-37.95" ty="-16.8"/>
                   </matrix>
@@ -18,7 +18,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="shield" color="#9933CC" autoNamed="false">
+        <DOMLayer name="shield" color="#9933CC" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
@@ -27,7 +27,7 @@
                     <Matrix a="1.00999450683594" d="1.00999450683594" tx="-37.85" ty="-17"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="38.05" y="16.85"/>
+                    <Point x="38.1" y="16.85"/>
                   </transformationPoint>
                   <filters>
                     <GlowFilter blurX="9" blurY="9" color="#990000" knockout="true"/>

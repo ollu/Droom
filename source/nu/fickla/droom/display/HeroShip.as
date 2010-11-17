@@ -2,6 +2,8 @@ package nu.fickla.droom.display
 {
 	import flash.ui.Keyboard;
 	import flash.events.Event;
+	import flash.utils.Timer;
+	import flash.events.TimerEvent;
 	import flash.events.KeyboardEvent;
 	import flash.display.Stage;
 
@@ -9,8 +11,10 @@ package nu.fickla.droom.display
 	{
 		
 		//private var fireTimer:Timer;
-		private var canFire:Boolean = true;
+		private var moveShipTimer : Timer;
 		private var activeKeys : Array;
+		
+		private var speed : int = 5;
 
 		public function HeroShip()
 		{
@@ -29,25 +33,27 @@ package nu.fickla.droom.display
 			
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDown);
 			stage.addEventListener(KeyboardEvent.KEY_UP, keyUp);
-			this.addEventListener(Event.ENTER_FRAME, moveShip);
+			addEventListener(Event.ENTER_FRAME, moveShip);
+			
 		}
 
 		private function moveShip(event : Event) : void
 		{
 			if(isKeyDown(Keyboard.LEFT) == true){
-				this.x -= 5;
+				x < 70 ? x = 60 : x = x - speed;
+				
 			}
 			
 			if(isKeyDown(Keyboard.RIGHT) == true){
-				this.x += 5;
+				x > stage.stageWidth - 45 ? x = stage.stageWidth - 35 : x = x + speed;
 			}
 			
 			if(isKeyDown(Keyboard.UP) == true){
-				this.y -= 5;
+				y < 60 ? y = 50 : y = y - speed;
 			}
 			
 			if(isKeyDown(Keyboard.DOWN) == true){
-				this.y += 5;
+				y > stage.stageHeight - 40 ? y = stage.stageHeight - 30 : y = y + speed;
 			}
 		}
 		

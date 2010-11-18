@@ -6,9 +6,13 @@ package nu.fickla.droom
 	import flash.ui.Keyboard;
 	import nu.fickla.droom.display.HeroShip;
 	
+	// import nl.demonsters.debugger.MonsterDebugger;
+	
 	public class Droom extends Sprite
 	{
 		private var heroShip : HeroShip;
+		
+		// public var debugger:MonsterDebugger = new MonsterDebugger(this);
 		
 		public function Droom()
 		{

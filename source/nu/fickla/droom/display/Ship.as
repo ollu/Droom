@@ -1,10 +1,14 @@
 package nu.fickla.droom.display
 {
 	import flash.display.Sprite;
+	import flash.utils.Timer;
 
 	public class Ship extends Sprite
 	{
-		private var _moving : Boolean;
+		
+		public var fireTimer : Timer;
+		public var canFire : Boolean;
+		public var speed : int;
 		
 		public function Ship()
 		{
@@ -23,15 +27,6 @@ package nu.fickla.droom.display
 		{
 			
 		}
-		
-		public function set moving(value : Boolean) : void
-		{
-			_moving = value;
-		}
-		
-		public function get moving() : Boolean
-		{
-			return _moving;
-		}
+
 	}
 }

@@ -1,19 +1,21 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#000000" width="750" height="350" frameRate="30" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 11.0 build 485" majorVersion="11" buildNumber="485" viewAngle3D="70.7391536835427" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
           <DOMFolderItem name="EnemyShips" itemID="4a031846-000003fb" isExpanded="true"/>
-          <DOMFolderItem name="Resources" itemID="4a03187b-000003ff" isExpanded="true"/>
+          <DOMFolderItem name="Resources" itemID="4a03187b-000003ff"/>
      </folders>
      <fonts>
           <DOMFontItem name="whimsyNumerals" itemID="4ce2c8f7-0000056e" font="WhimsyTT" size="0" id="1" sourceLastImported="1289930998" embedRanges="3"/>
      </fonts>
      <symbols>
           <Include href="Boss.xml" loadImmediate="false"/>
+          <Include href="Drone.xml" loadImmediate="false"/>
           <Include href="EnemyShips/Boss ship 1.xml" loadImmediate="false"/>
           <Include href="EnemyShips/EnemyMissile.xml"/>
           <Include href="EnemyShips/EnemyShip.xml"/>
           <Include href="EnemyShips/MiniBoss.xml"/>
           <Include href="Explosion.xml"/>
           <Include href="HeroShip.xml"/>
+          <Include href="missile.xml"/>
           <Include href="PointBurst.xml"/>
           <Include href="PowerUps.xml"/>
           <Include href="Resources/AlienHead.xml" loadImmediate="false"/>
@@ -26,7 +28,7 @@
      <timelines>
           <DOMTimeline name="Scene 1">
                <layers>
-                    <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+                    <DOMLayer name="FlashAICB" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements/>
@@ -339,25 +341,25 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
-          <PublishItem publishSize="9186" publishTime="1289992310"/>
-          <PublishItem publishSize="9186" publishTime="1289992302"/>
-          <PublishItem publishSize="9191" publishTime="1289992248"/>
-          <PublishItem publishSize="9196" publishTime="1289992193"/>
-          <PublishItem publishSize="9196" publishTime="1289992179"/>
-          <PublishItem publishSize="9136" publishTime="1289992081"/>
-          <PublishItem publishSize="9088" publishTime="1289991936"/>
-          <PublishItem publishSize="9081" publishTime="1289991909"/>
-          <PublishItem publishSize="9069" publishTime="1289991846"/>
-          <PublishItem publishSize="7617" publishTime="1289991805"/>
-          <PublishItem publishSize="9148" publishTime="1289991553"/>
-          <PublishItem publishSize="9145" publishTime="1289991547"/>
-          <PublishItem publishSize="9124" publishTime="1289991516"/>
-          <PublishItem publishSize="9122" publishTime="1289991490"/>
-          <PublishItem publishSize="9142" publishTime="1289991447"/>
-          <PublishItem publishSize="9143" publishTime="1289991390"/>
-          <PublishItem publishSize="9124" publishTime="1289991357"/>
-          <PublishItem publishSize="9135" publishTime="1289991128"/>
-          <PublishItem publishSize="7615" publishTime="1289991118"/>
-          <PublishItem publishSize="9081" publishTime="1289991040"/>
+          <PublishItem publishSize="10083" publishTime="1290081230"/>
+          <PublishItem publishSize="10062" publishTime="1290081207"/>
+          <PublishItem publishSize="9989" publishTime="1290081097"/>
+          <PublishItem publishSize="9947" publishTime="1290081059"/>
+          <PublishItem publishSize="9942" publishTime="1290081019"/>
+          <PublishItem publishSize="9943" publishTime="1290081001"/>
+          <PublishItem publishSize="9941" publishTime="1290080983"/>
+          <PublishItem publishSize="9939" publishTime="1290080954"/>
+          <PublishItem publishSize="9938" publishTime="1290077403"/>
+          <PublishItem publishSize="9936" publishTime="1290077368"/>
+          <PublishItem publishSize="9938" publishTime="1290077362"/>
+          <PublishItem publishSize="9938" publishTime="1290077345"/>
+          <PublishItem publishSize="9940" publishTime="1290077322"/>
+          <PublishItem publishSize="9939" publishTime="1290077311"/>
+          <PublishItem publishSize="9940" publishTime="1290077256"/>
+          <PublishItem publishSize="9953" publishTime="1290076976"/>
+          <PublishItem publishSize="9953" publishTime="1290076890"/>
+          <PublishItem publishSize="9951" publishTime="1290076875"/>
+          <PublishItem publishSize="9953" publishTime="1290076850"/>
+          <PublishItem publishSize="9951" publishTime="1290076819"/>
      </publishHistory>
 </DOMDocument>

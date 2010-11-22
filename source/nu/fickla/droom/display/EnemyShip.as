@@ -69,7 +69,7 @@ package nu.fickla.droom.display {
 		private function explode() : void {
 			var explosion : Explosion = new Explosion(stage, x, y);
 			stage.addChild(explosion);
-			var pointBurst : PointBurst = new PointBurst(stage, x, y, 50);
+			var pointBurst : PointBurst = new PointBurst(x, y, 50);
 			stage.addChild(pointBurst);
 			removeSelf();
 		}

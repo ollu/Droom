@@ -44,7 +44,7 @@
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMDynamicText name="playerScore_txt" width="161.95" height="24.6" includeOutlines="true" isSelectable="false" lineType="multiline">
+                                        <DOMDynamicText name="playerScore_txt" selected="true" width="161.95" height="24.6" includeOutlines="true" isSelectable="false" lineType="multiline">
                                              <matrix>
                                                   <Matrix tx="138" ty="5"/>
                                              </matrix>
@@ -52,7 +52,7 @@
                                                   <DOMTextRun>
                                                        <characters></characters>
                                                        <textAttrs>
-                                                            <DOMTextAttrs aliasText="false" size="20" bitmapSize="400" face="WhimsyTT" fillColor="#CCCCCC"/>
+                                                            <DOMTextAttrs aliasText="false" size="25" bitmapSize="500" face="WhimsyTT" fillColor="#CCCCCC"/>
                                                        </textAttrs>
                                                   </DOMTextRun>
                                              </textRuns>
@@ -394,6 +394,9 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="24620" publishTime="1290427157"/>
+          <PublishItem publishSize="24615" publishTime="1290427135"/>
+          <PublishItem publishSize="24633" publishTime="1290427078"/>
           <PublishItem publishSize="24654" publishTime="1290421581"/>
           <PublishItem publishSize="24749" publishTime="1290421536"/>
           <PublishItem publishSize="24752" publishTime="1290421489"/>
@@ -411,8 +414,5 @@
           <PublishItem publishSize="24844" publishTime="1290417906"/>
           <PublishItem publishSize="13982" publishTime="1290417855"/>
           <PublishItem publishSize="13982" publishTime="1290417812"/>
-          <PublishItem publishSize="13983" publishTime="1290417576"/>
-          <PublishItem publishSize="13982" publishTime="1290416731"/>
-          <PublishItem publishSize="24941" publishTime="1290169863"/>
      </publishHistory>
 </DOMDocument>

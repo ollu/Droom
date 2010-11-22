@@ -66,31 +66,33 @@ package nu.fickla.droom {
 		private function startGame(evt : MouseEvent) : void {
 			// Activates keyboard input
 			stage.focus = this;
+
 			splashScreen.removeEventListener(MouseEvent.CLICK, startGame);
 			stage.removeChild(splashScreen);
 			splashScreen = null;
 
-			// Load sound using URLRequest
-			soundClip.load(new URLRequest("../assets/game_theme.mp3"));
+			soundClip.load(new URLRequest("game_theme.mp3"));
 
 			// Play the sound when loaded
 			soundClip.addEventListener(Event.COMPLETE, playSnd, false, 0, true);
 
 			enemyWaveCounter = enemyWaveLength[gameLevel];
+
 			// Background stars
 			createStars(100);
 
-			theShip = new Ship(stage);
+			theShip = new Ship();
 			stage.addChild(theShip);
 
 			playerScore_txt.text = "0000000";
 
+/*
 			healthBar = new GUIStatusBar();
 			stage.addChild(healthBar);
 
 			shieldBar = new GUIStatusBar();
 			stage.addChild(shieldBar);
-
+*/
 			enemyFirstWaveDelay = new Timer(7500, 1);
 			enemyFirstWaveDelay.addEventListener(TimerEvent.TIMER, enemySetup, false, 0, true);
 			enemyFirstWaveDelay.start();
@@ -109,7 +111,7 @@ package nu.fickla.droom {
 
 		private function loop(event : Event) : void {
 			if (enemyWaveCounter != 0 ) {
-				trace("enemySetup");
+				
 				enemyShipDelay++;
 
 				if (enemyShipDelay > 10) {
@@ -136,14 +138,14 @@ package nu.fickla.droom {
 			} else if (countForBoss != 2) {
 				countForMiniBoss = 0;
 				countForBoss++;
-				var miniBoss : MiniBoss = new MiniBoss(stage, theShip);
+				var miniBoss : MiniBoss = new MiniBoss(theShip);
 				stage.addChild(miniBoss);
 				miniBoss.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
 				enemyList.push(miniBoss);
 			} else {
 				countForBoss = 0;
 				countForMiniBoss = 0;
-				var boss : Boss = new Boss(stage, theShip);
+				var boss : Boss = new Boss(theShip);
 				stage.addChild(boss);
 				boss.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
 				enemyList.push(boss);

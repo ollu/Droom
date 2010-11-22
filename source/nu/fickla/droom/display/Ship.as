@@ -4,30 +4,29 @@ package nu.fickla.droom.display {
 	import com.senocular.utils.KeyObject;
 
 	import flash.display.MovieClip;
-	import flash.display.Stage;
 	import flash.events.Event;
 	import flash.events.TimerEvent;
 	import flash.ui.Keyboard;
 	import flash.utils.Timer;
 
 	public class Ship extends MovieClip {
-		private var stageRef : Stage;
 		private var key : KeyObject;
 		private var speed : uint = 4;
 		public var shipShield : uint = 0;
 		public var shipHealth : uint = 100;
-
 		// Fire related variables
 		private var fireTimer : Timer;
 		private var canFire : Boolean = true;
 
-		public function Ship(stageRef : Stage) {
-			this.stageRef = stageRef;
+		public function Ship() {
+			addEventListener(Event.ADDED_TO_STAGE, readyOnStage, false, 0, true);
+		}
 
+		private function readyOnStage(event : Event) : void {
 			this.x = 100;
-			this.y = stageRef.stageHeight / 2;
+			this.y = stage.stageHeight / 2;
 
-			key = new KeyObject(stageRef);
+			key = new KeyObject(stage);
 
 			fireTimer = new Timer(300, 1);
 			fireTimer.addEventListener(TimerEvent.TIMER, fireTimerComplete, false, 0, true);
@@ -37,7 +36,7 @@ package nu.fickla.droom.display {
 
 		public function loop(event : Event) : void {
 			if (key.isDown(Keyboard.RIGHT)) {
-				x > stageRef.stageWidth - 60 ? x = stageRef.stageWidth - 40 : x = x + speed;
+				x > stage.stageWidth - 60 ? x = stage.stageWidth - 40 : x = x + speed;
 			}
 
 			if (key.isDown(Keyboard.LEFT)) {
@@ -49,7 +48,7 @@ package nu.fickla.droom.display {
 			}
 
 			if (key.isDown(Keyboard.DOWN)) {
-				y > stageRef.stageHeight - 40 ? y = stageRef.stageHeight - 30 : y = y + speed;
+				y > stage.stageHeight - 40 ? y = stage.stageHeight - 30 : y = y + speed;
 			}
 
 			if (key.isDown(Keyboard.SPACE)) {
@@ -72,14 +71,14 @@ package nu.fickla.droom.display {
 		}
 
 		private function fireBullet() : void {
-			stageRef.addChild(new Missile(stageRef, x, y));
+			stage.addChild(new Missile(x, y));
 		}
 
 		private function fireTimerComplete(evt : Event) : void {
 			canFire = true;
 		}
 
-		public function takeDamage(damage) : void {
+		public function takeDamage(damage : uint) : void {
 			if (shipShield > 0) {
 				shipShield -= damage;
 				// Shield.update(shipShield);
@@ -90,14 +89,14 @@ package nu.fickla.droom.display {
 		}
 
 		private function explode() : void {
-			var explosion : Explosion = new Explosion(stageRef, x, y);
-			stageRef.addChild(explosion);
+			var explosion : Explosion = new Explosion(stage, x, y);
+			stage.addChild(explosion);
 			removeSelf();
 		}
 
 		private function removeSelf() : void {
 			removeEventListener(Event.ENTER_FRAME, loop);
-			if (stageRef.contains(this)) stageRef.removeChild(this);
+			if (stage.contains(this)) stage.removeChild(this);
 		}
 	}
 }

@@ -2,25 +2,25 @@ package nu.fickla.droom.display {
 	import com.greensock.TweenLite;
 
 	import flash.display.MovieClip;
-	import flash.display.Stage;
 	import flash.events.Event;
 	import flash.events.TimerEvent;
 	import flash.utils.Timer;
 
 	public class Boss extends MovieClip {
-		private var stageRef : Stage;
-		private var heroRef : Ship
-		private var speed : uint = 5;
+		private var heroRef : Ship;
 		private var health : uint = 100;
 		private var fireTimer : Timer;
 		private var canFire : Boolean = true;
 
-		public function Boss(stageRef, heroRef) {
-			this.stageRef = stageRef;
+		public function Boss(heroRef : Ship) {
+			addEventListener(Event.ADDED_TO_STAGE, readyOnStage, false, 0, true);
 			this.heroRef = heroRef;
+		}
+
+		private function readyOnStage(event : Event) : void {
 			scaleX = scaleY = .8;
 			this.x = 850;
-			this.y = stageRef.stageHeight / 2;
+			this.y = stage.stageHeight / 2;
 			addEventListener(Event.ENTER_FRAME, loop, false, 0, true);
 
 			TweenLite.to(this, 2, {x:500, onComplete:onFinishTween, onCompleteParams:[5]});
@@ -40,7 +40,7 @@ package nu.fickla.droom.display {
 			}
 		}
 
-		private function onFinishTween(param) {
+		private function onFinishTween(param : uint) : void {
 			switch (param) {
 				case 1:
 					TweenLite.to(this, 1.5, {x:500, y:50, onComplete:onFinishTween, onCompleteParams:[2]});
@@ -64,8 +64,8 @@ package nu.fickla.droom.display {
 		}
 
 		private function fire() : void {
-			stageRef.addChild(new EnemyMissile(stageRef, heroRef, x, y + 10));
-			stageRef.addChild(new EnemyMissile(stageRef, heroRef, x - 10, y));
+			stage.addChild(new EnemyMissile(stage, heroRef, x, y + 10));
+			stage.addChild(new EnemyMissile(stage, heroRef, x - 10, y));
 		}
 
 		private function fireTimerComplete(evt : Event) : void {
@@ -78,16 +78,16 @@ package nu.fickla.droom.display {
 		}
 
 		private function explode() : void {
-			var explosion : Explosion = new Explosion(stageRef, x, y);
-			stageRef.addChild(explosion);
-			var pointBurst : PointBurst = new PointBurst(stageRef, x, y, 5000);
-			stageRef.addChild(pointBurst);
+			var explosion : Explosion = new Explosion(stage, x, y);
+			stage.addChild(explosion);
+			var pointBurst : PointBurst = new PointBurst(x, y, 5000);
+			stage.addChild(pointBurst);
 			removeSelf();
 		}
 
 		function removeSelf() : void {
 			removeEventListener(Event.ENTER_FRAME, loop);
-			if (stageRef.contains(this)) stageRef.removeChild(this);
+			if (stage.contains(this)) stage.removeChild(this);
 		}
 	}
 }

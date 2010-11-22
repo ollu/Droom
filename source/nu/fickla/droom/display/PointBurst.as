@@ -6,10 +6,8 @@ package nu.fickla.droom.display {
 	import flash.events.Event;
 
 	public class PointBurst extends MovieClip {
-		private var stageRef : Stage;
 
-		public function PointBurst(stageRef : Stage, x : Number, y : Number, score : uint) : void {
-			this.stageRef = stageRef;
+		public function PointBurst(x : Number, y : Number, score : uint) : void {
 			this.x = x;
 			this.y = y;
 			score_txt.text = score.toString();
@@ -25,7 +23,7 @@ package nu.fickla.droom.display {
 
 		private function removeSelf() : void {
 			removeEventListener(Event.ENTER_FRAME, loop);
-			if (stageRef.contains(this)) stageRef.removeChild(this);
+			if (stage.contains(this)) stage.removeChild(this);
 		}
 	}
 }

@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Resources/smoke" itemID="49ffe76a-0000001c" sourceLibraryItemHRef="Symbol 1" lastModified="1241504090">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Resources/smoke" itemID="49ffe76a-0000001c" sourceFlashFilepath="../../../../../GIT/FLASH/SpaceShooter/trunk/SpaceShooter.fla" sourceLibraryItemHRef="Resources/smoke" sourceLastModified="1241504090" lastModified="1241504090">
   <timeline>
     <DOMTimeline name="smoke">
       <layers>

@@ -1,0 +1,80 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GameOverMenu" itemID="4a13ae6f-00000068" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="nu.fickla.droom.display.GameOverMenu" sourceFlashFilepath="../../../../../GIT/FLASH/SpaceShooter/trunk/SpaceShooter.fla" sourceLibraryItemHRef="Resources/gameOverMenu" sourceLastModified="1241513632" lastModified="1290419486" isSpriteSubclass="true">
+  <timeline>
+    <DOMTimeline name="GameOverMenu">
+      <layers>
+        <DOMLayer name="Text" color="#9933CC" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMStaticText width="327.95" height="31" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="4" ty="13.8"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>GAME OVER</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" alpha="0.603921568627451" size="35" face="WhimsyTT"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                  <filters>
+                    <GlowFilter color="#990000" quality="3"/>
+                  </filters>
+                </DOMStaticText>
+                <DOMSymbolInstance libraryItemName="Resources/playAgain" name="playAgainButton" symbolType="button">
+                  <matrix>
+                    <Matrix tx="112.15" ty="152.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="53.9" y="14.3"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMStaticText left="-114.2" width="253.05" height="61" isSelectable="false">
+                  <matrix>
+                    <Matrix tx="153.1" ty="64.9"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>Damn thoose aliens!&#xD;Put me in that crap for ship again i wanna...</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" alpha="0.603921568627451" size="20" face="WhimsyTT"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Background" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FFFFFF" alpha="0.603921568627451"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="5.55">
+                        <fill>
+                          <SolidColor color="#666666"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge fillStyle0="1" strokeStyle="1" edges="!6639 0|100 0!100 0[0 0 0 100!0 100|0 3879!0 3879[0 3979 100 3979!100 3979|6639 3979!6639 3979[6739 3979 6739 3879!6739 3879|6739 100!6739 100[6739 0 6639 0"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

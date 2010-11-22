@@ -1,0 +1,40 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EnemyMissile" itemID="4a0af713-00000021" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="nu.fickla.droom.display.EnemyMissile" sourceLibraryItemHRef="Symbol 1" lastModified="1290419430" isSpriteSubclass="true">
+  <timeline>
+    <DOMTimeline name="EnemyMissile">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="-0.006103515625" d="-0.0020751953125" tx="-5"/>
+                        </matrix>
+                        <GradientEntry color="#FF0000" ratio="0"/>
+                        <GradientEntry ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!-100 -34[-59 -34 -29 -24!-29 -24[0 -14 0 0!0 0[0 14 -29 24!-29 24[-59 34 -100 34!-100 34[-142 34 -171 24!-171 24[-200 14 -200 0!-200 0[-200 -14 -171 -24!-171 -24[-142 -34 -100 -34"/>
+                    <Edge cubics="!-100 34(;-128,34 -152,31 -171,24q-100 34Q-142 34q-171 24);"/>
+                    <Edge cubics="!-29 24(;-49,31 -73,34 -100,34q-29 24Q-59 34q-100 34);"/>
+                    <Edge cubics="!-29 -24(;-10,-17 0,-9 0,0q-29 -24Q0 -14q0 0);"/>
+                    <Edge cubics="!-100 -34(;-73,-34 -49,-31 -29,-24q-100 -34Q-59 -34q-29 -24);"/>
+                    <Edge cubics="!-171 -24(;-152,-31 -128,-34 -100,-34q-171 -24Q-142 -34q-100 -34);"/>
+                    <Edge cubics="!-200 0(;-200,-9 -190,-17 -171,-24q-200 0Q-200 -14q-171 -24);"/>
+                    <Edge cubics="!-171 24(;-190,17 -200,9 -200,0q-171 24Q-200 14q-200 0);"/>
+                    <Edge cubics="!0 0(0,0;0,9 -10,17 -29,24q0 0Q0 14q-29 24);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

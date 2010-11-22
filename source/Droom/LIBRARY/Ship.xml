@@ -1,0 +1,43 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Ship" itemID="49ff4716-0000016c" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="nu.fickla.droom.display.Ship" sourceFlashFilepath="../../../../../GIT/FLASH/SpaceShooter/trunk/SpaceShooter.fla" sourceLibraryItemHRef="Ship" sourceLastModified="1241716891" lastModified="1290414827" lastUniqueIdentifier="3" isSpriteSubclass="true">
+  <timeline>
+    <DOMTimeline name="Ship">
+      <layers>
+        <DOMLayer name="Ship" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/MC_ship" name="" centerPoint3DX="-5.05">
+                  <matrix>
+                    <Matrix tx="-37.95" ty="-16.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="37.95" y="16.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="shield" color="#9933CC" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Resources/MC_ship" name="shield" centerPoint3DX="0.5">
+                  <matrix>
+                    <Matrix a="1.00999450683594" d="1.00999450683594" tx="-37.85" ty="-17"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="38.05" y="16.85"/>
+                  </transformationPoint>
+                  <filters>
+                    <GlowFilter blurX="9" blurY="9" color="#990000" knockout="true"/>
+                  </filters>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

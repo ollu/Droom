@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="missile" itemID="4ce4f15b-000002f5" linkageExportForAS="true" linkageClassName="nu.fickla.droom.display.Missile" sourceLibraryItemHRef="Symbol 1" lastModified="1290081227">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Missile" itemID="4a0a8057-00000230" linkageExportForAS="true" linkageClassName="nu.fickla.droom.display.Missile" sourceLibraryItemHRef="Symbol 1" lastModified="1290414827">
   <timeline>
-    <DOMTimeline name="missile">
+    <DOMTimeline name="Missile">
       <layers>
         <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
           <frames>
@@ -9,22 +9,21 @@
                 <DOMShape>
                   <strokes>
                     <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal" weight="2.5">
+                      <SolidStroke scaleMode="normal" weight="2">
                         <fill>
-                          <LinearGradient spreadMethod="reflect">
+                          <LinearGradient>
                             <matrix>
-                              <Matrix a="0.007965087890625" d="0.001220703125" tx="5.5"/>
+                              <Matrix a="0.002166748046875" d="0.001220703125" tx="1.5"/>
                             </matrix>
-                            <GradientEntry color="#608C00" ratio="0.776470588235294"/>
-                            <GradientEntry color="#D4F7F5" ratio="1"/>
+                            <GradientEntry color="#6BCFF6" ratio="0"/>
+                            <GradientEntry color="#FFFFFF" ratio="1"/>
                           </LinearGradient>
                         </fill>
                       </SolidStroke>
                     </StrokeStyle>
                   </strokes>
                   <edges>
-                    <Edge strokeStyle="1" edges="!0 0|221 0"/>
-                    <Edge cubics="!0 0(;0,0 221,0 221,0q0 0 221 0);"/>
+                    <Edge strokeStyle="1" edges="!0 0|60 0"/>
                   </edges>
                 </DOMShape>
               </elements>

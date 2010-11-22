@@ -1,46 +1,38 @@
-package nu.fickla.droom.display
-{
-	import flash.display.Sprite;
-	import flash.display.Stage;
-	import flash.utils.Timer;
-	import flash.events.TimerEvent;
-	import flash.events.Event;
-	import nu.fickla.droom.events.OutOfBoundEvent;
-	
-	public class Missile extends Sprite
-	{
-		
-		private var missileSpeed:Number = 16;
-		private var missileTimer : Timer;
-		private var outOfBound : Boolean;
-		
-		public function Missile(shipPosX : int, shipPosY : int)
-		{
-			x = shipPosX + 40;
-			y = shipPosY + 5;
-			
-			outOfBound = false;
-			addEventListener(Event.ADDED_TO_STAGE, addedToStage, false, 0, true);
-		}
-		
-		private function addedToStage(event : Event) : void
-		{
-			removeEventListener(Event.ADDED_TO_STAGE, addedToStage);
+package nu.fickla.droom.display {
+	import nu.fickla.droom.Droom;
 
-			missileTimer = new Timer(10);
-			missileTimer.addEventListener(TimerEvent.TIMER, moveMissile, false, 0, true);
-			missileTimer.start();
+	import flash.display.MovieClip;
+	import flash.display.Stage;
+	import flash.events.Event;
+
+	public class Missile extends MovieClip {
+		private var stageRef : Stage;
+		private var bulletSpeed : Number = 16;
+
+		public function Missile(stageRef : Stage, x : Number, y : Number) : void {
+			this.stageRef = stageRef;
+			this.x = x + 40;
+			this.y = y + 5;
+
+			addEventListener(Event.ENTER_FRAME, loop, false, 0, true);
 		}
-		
-		private function moveMissile(event : TimerEvent) : void
-		{
-			x += missileSpeed;
-			
-			if(outOfBound)
-			{
-				var newEvent : OutOfBoundEvent = new OutOfBoundEvent(OutOfBoundEvent.OUT_OF_BOUND);
-				dispatchEvent(newEvent);
+
+		private function loop(e : Event) : void {
+			// Move missile forward
+			x += bulletSpeed;
+			for (var i : int = 0; i < Droom.enemyList.length; i++) {
+				if (hitTestObject(Droom.enemyList[i])) {
+					Droom.enemyList[i].takeDamage();
+					removeSelf();
+				}
 			}
+			// Remove missile when going of stage
+			if (x > stageRef.stageWidth) removeSelf();
+		}
+
+		private function removeSelf() : void {
+			removeEventListener(Event.ENTER_FRAME, loop);
+			if (stageRef.contains(this)) stageRef.removeChild(this);
 		}
 	}
 }

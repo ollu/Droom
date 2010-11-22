@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Resources/AlienHead" itemID="4a0309ad-0000034c" sourceFlashFilepath=".\AlienSpaceShip.fla" sourceLibraryItemHRef="AlienHead" sourceLastModified="1241709798" lastModified="1241709798">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Resources/AlienHead" itemID="4a0309ad-0000034c" sourceFlashFilepath="../../../../../GIT/FLASH/SpaceShooter/trunk/SpaceShooter.fla" sourceLibraryItemHRef="Resources/AlienHead" sourceLastModified="1241709798" lastModified="1241709798">
   <timeline>
     <DOMTimeline name="AlienHead">
       <layers>

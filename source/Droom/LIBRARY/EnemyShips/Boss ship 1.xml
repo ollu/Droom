@@ -1,6 +1,6 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EnemyShips/Boss ship 1" itemID="4a0318f0-00000401" sourceFlashFilepath=".\AlienSpaceShip.fla" sourceLibraryItemHRef="Boss" sourceLastModified="1241712976" lastModified="1241765595" lastUniqueIdentifier="8">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="EnemyShips/Boss ship 1" itemID="4a0318f0-00000401" sourceFlashFilepath="../../../../../GIT/FLASH/SpaceShooter/trunk/SpaceShooter.fla" sourceLibraryItemHRef="EnemyShips/Boss ship 1" sourceLastModified="1241765595" lastModified="1242803740" lastUniqueIdentifier="8">
   <timeline>
-    <DOMTimeline name="Boss ship 1" currentFrame="46" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-147&lt;/guideline&gt;&lt;guideline direction="h"&gt;56&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="Boss ship 1" currentFrame="49" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;-147&lt;/guideline&gt;&lt;guideline direction="h"&gt;56&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
         <DOMLayer name="Aliens" color="#FF4F4F" autoNamed="false">
           <frames>

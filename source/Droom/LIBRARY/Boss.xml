@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Boss" itemID="4a03191e-00000405" sourceLibraryItemHRef="Symbol 1" lastModified="1289930836" lastUniqueIdentifier="2">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Boss" itemID="4a03191e-00000405" linkageExportForAS="true" linkageClassName="nu.fickla.droom.display.Boss" sourceFlashFilepath="../../../../../GIT/FLASH/SpaceShooter/trunk/SpaceShooter.fla" sourceLibraryItemHRef="Boss" sourceLastModified="1241713475" lastModified="1290419445" lastUniqueIdentifier="2">
   <timeline>
     <DOMTimeline name="Boss">
       <layers>
@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="EnemyShips/Boss ship 1" name="" selected="true" centerPoint3DX="-0.05">
+                <DOMSymbolInstance libraryItemName="EnemyShips/Boss ship 1" name="" centerPoint3DX="-0.05">
                   <matrix>
                     <Matrix a="0.5" d="0.5" tx="1.1" ty="-3.8"/>
                   </matrix>

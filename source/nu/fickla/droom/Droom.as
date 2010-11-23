@@ -45,6 +45,8 @@ package nu.fickla.droom {
 		// Create an instance of the Sound class
 		private var soundClip : Sound = new Sound();
 		private var sndChannel : SoundChannel = new SoundChannel();
+		
+		private var starList : Array;
 
 		public function Droom() : void {
 			startGame();
@@ -62,7 +64,7 @@ package nu.fickla.droom {
 			enemyWaveCounter = enemyWaveLength[gameLevel];
 
 			// Background stars
-			createStars(100);
+			starList = createStars(100);
 
 			// Create out hero
 			theHero = new Ship();
@@ -96,6 +98,8 @@ package nu.fickla.droom {
 
 		private function gameMover(event : TimerEvent) : void {
 			shipHandler();
+			
+			moveStars();
 //			if (enemyList)
 //				moveEnemies();
 				
@@ -109,6 +113,11 @@ package nu.fickla.droom {
 				enemy.x -= enemy.speed;
 			}
 			
+		}
+		
+		private function moveStars() :void {
+			for each(var star : Star in starList)
+				star.move();
 		}
 
 		private function shipHandler() : void {
@@ -193,14 +202,17 @@ package nu.fickla.droom {
 			countDownTilNextWave.stop();
 		}
 
-		private function createStars(amount : uint) : void {
+		private function createStars(amount : uint) : Array {
+			var stars : Array = new Array();
+			
 			for (var i : uint = 0; i < amount; i++ ) {
 				var star : Star = new Star();
 				star.x = Math.random() * stage.stageWidth;
 				star.y = 5 + Math.random() * stage.stageHeight - 10;
 				addChild(star);
-			}
-			;
+				stars.push(star);
+			};
+			return stars;
 		}
 
 		private function removeEnemy(event : Event) : void {

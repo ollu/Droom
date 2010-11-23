@@ -8,12 +8,11 @@ package nu.fickla.droom.display {
 		private var _speed : uint;
 		private var _shipShield : uint;
 		private var _shipHealth : uint;
-		
-		// Fire related variables
-		private var fireTimer : Timer;
-		private var canFire : Boolean = true;
+		private var _canFire : Boolean;
+		public var fireTimer : Timer;
 
 		public function Ship() {
+			canFire = true;
 			addEventListener(Event.ADDED_TO_STAGE, readyOnStage, false, 0, true);
 		}
 
@@ -23,10 +22,6 @@ package nu.fickla.droom.display {
 
 			fireTimer = new Timer(300, 1);
 			fireTimer.addEventListener(TimerEvent.TIMER, fireTimerComplete, false, 0, true);
-		}
-
-		private function fireBullet() : void {
-			stage.addChild(new Missile(x, y));
 		}
 
 		private function fireTimerComplete(evt : Event) : void {
@@ -47,6 +42,12 @@ package nu.fickla.droom.display {
 			var explosion : Explosion = new Explosion(stage, x, y);
 			stage.addChild(explosion);
 		}
+
+		/*
+		 * 
+		 * GETTERS AND SETTERS
+		 * 
+		 */
 
 		public function get speed() : uint {
 			return _speed;
@@ -70,6 +71,14 @@ package nu.fickla.droom.display {
 
 		public function set shipHealth(shipHealth : uint) : void {
 			_shipHealth = shipHealth;
+		}
+
+		public function get canFire() : Boolean {
+			return _canFire;
+		}
+
+		public function set canFire(canFire : Boolean) : void {
+			_canFire = canFire;
 		}
 	}
 }

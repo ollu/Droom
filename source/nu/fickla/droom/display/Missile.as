@@ -1,43 +1,25 @@
 package nu.fickla.droom.display {
-	import nu.fickla.droom.Droom;
+	import flash.display.Sprite;
 
-	import flash.display.MovieClip;
-	import flash.display.Stage;
-	import flash.events.Event;
-
-	public class Missile extends MovieClip {
-		private var bulletSpeed : Number = 16;
-		private var stageRef : Stage;
+	public class Missile extends Sprite {
+		private var _speed : Number = 16;
 
 		public function Missile(x : Number, y : Number) : void {
 
 			this.x = x + 40;
 			this.y = y + 5;
-
-			addEventListener(Event.ADDED_TO_STAGE, readyOnStage, false, 0, true);
 		}
 
-		private function readyOnStage(event : Event) : void {
-			stageRef = stage;
-			addEventListener(Event.ENTER_FRAME, loop, false, 0, true);
+		public function move() : void {
+			x += _speed;
 		}
 
-		private function loop(e : Event) : void {
-			// Move missile forward
-			x += bulletSpeed;
-			for (var i : int = 0; i < Droom.enemyList.length; i++) {
-				if (hitTestObject(Droom.enemyList[i])) {
-					Droom.enemyList[i].takeDamage();
-					removeSelf();
-				}
-			}
-			// Remove missile when going of stage
-			if (x > stageRef.stageWidth) removeSelf();
+		public function get speed() : Number {
+			return _speed;
 		}
 
-		private function removeSelf() : void {
-			removeEventListener(Event.ENTER_FRAME, loop);
-			if (stage.contains(this)) stage.removeChild(this);
+		public function set speed(speed : Number) : void {
+			_speed = speed;
 		}
 	}
 }

@@ -4,6 +4,7 @@ package nu.fickla.droom {
 	import nu.fickla.droom.display.Explosion;
 	import nu.fickla.droom.display.GUIStatusBar;
 	import nu.fickla.droom.display.MiniBoss;
+	import nu.fickla.droom.display.Missile;
 	import nu.fickla.droom.display.PointBurst;
 	import nu.fickla.droom.display.Ship;
 	import nu.fickla.droom.display.Star;
@@ -28,6 +29,7 @@ package nu.fickla.droom {
 		private var healthBar : GUIStatusBar;
 		private var shieldBar : GUIStatusBar;
 		private var key : KeyObject;
+		private var theHeroMissiles : Array = new Array();
 		// Keep track of every enemy
 		public static var enemyList : Array = new Array();
 		private var enemyShipDelay : uint;
@@ -44,11 +46,12 @@ package nu.fickla.droom {
 		// Current level of the game
 		public static var gameLevel : uint = 0;
 		private var gameTimer : Timer;
+		private var gamePaused : Boolean;
 		// Create an instance of the Sound class
 		private var soundClip : Sound = new Sound();
 		private var sndChannel : SoundChannel = new SoundChannel();
 		
-		private var starList : Array;
+		private var backgroundStarList : Array;
 
 		public function Droom() : void {
 			startGame();
@@ -57,6 +60,7 @@ package nu.fickla.droom {
 		private function startGame() : void {
 			// Activates keyboard input
 			stage.focus = this;
+			gamePaused = false;
 
 			soundClip.load(new URLRequest("game_theme.mp3"));
 
@@ -66,7 +70,7 @@ package nu.fickla.droom {
 			enemyWaveCounter = enemyWaveLength[gameLevel];
 
 			// Background stars
-			starList = createStars(100);
+			backgroundStarList = createStars(100);
 
 			// Create out hero
 			theHero = new Ship();
@@ -105,10 +109,18 @@ package nu.fickla.droom {
 			
 			if (enemyList)
 				moveEnemies();
-				
+			
+			if(theHeroMissiles)
+				moveMissiles();
+			
 			// checkForCollisions();
 			// checkForHits();
 				
+		}
+
+		private function moveMissiles() : void {
+			for each (var missile : Missile in theHeroMissiles)
+				missile.move();
 		}
 
 		private function moveEnemies() : void {
@@ -119,7 +131,7 @@ package nu.fickla.droom {
 		}
 		
 		private function moveStars() :void {
-			for each(var star : Star in starList)
+			for each(var star : Star in backgroundStarList)
 				star.move();
 		}
 
@@ -144,13 +156,20 @@ package nu.fickla.droom {
 				yPos > stage.stageHeight - 40 ? yPos = stage.stageHeight - 30 : theHero.y += speed;
 			}
 
-			// if (key.isDown(Keyboard.SPACE)) {
-			// if (canFire) {
-			// fireBullet();
-			// canFire = false;
-			// fireTimer.start();
-			// }
-			// }
+			 if (key.isDown(Keyboard.SPACE)) {
+				 if (theHero.canFire) {
+				 	theHeroFire();
+				 	theHero.canFire = false;
+				 	theHero.fireTimer.start();
+				 }
+			 }
+		}
+		
+		private function theHeroFire() : void {
+			var missile : Missile = new Missile(theHero.x, theHero.y);
+			addChild(missile);
+			
+			theHeroMissiles.push(missile);
 		}
 
 		private function enemySetup(event : Event) : void {
@@ -187,19 +206,25 @@ package nu.fickla.droom {
 				// Switch between top and bottom position
 				enemyStartPos *= -1;
 			} else if (countForBoss != 2) {
+
 				countForMiniBoss = 0;
 				countForBoss++;
+
 				var miniBoss : MiniBoss = new MiniBoss(theHero);
 				stage.addChild(miniBoss);
 				miniBoss.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
 				enemyList.push(miniBoss);
+
 			} else {
+
 				countForBoss = 0;
 				countForMiniBoss = 0;
+
 				var boss : Boss = new Boss(theHero);
 				stage.addChild(boss);
 				boss.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
 				enemyList.push(boss);
+
 			}
 
 			countDownTilNextWave.stop();

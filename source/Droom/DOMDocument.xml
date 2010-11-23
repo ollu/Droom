@@ -44,7 +44,7 @@
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMDynamicText name="playerScore_txt" selected="true" width="161.95" height="24.6" includeOutlines="true" isSelectable="false" lineType="multiline">
+                                        <DOMDynamicText name="playerScore_txt" width="161.95" height="24.6" includeOutlines="true" isSelectable="false" lineType="multiline">
                                              <matrix>
                                                   <Matrix tx="138" ty="5"/>
                                              </matrix>
@@ -392,27 +392,30 @@
                </swatches>
           </swatchList>
      </extendedSwatchLists>
+     <persistentData>
+          <PD n="TestMovieChecked" v="FlashPro"/>
+     </persistentData>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
-          <PublishItem publishSize="24620" publishTime="1290427157"/>
-          <PublishItem publishSize="24615" publishTime="1290427135"/>
-          <PublishItem publishSize="24633" publishTime="1290427078"/>
-          <PublishItem publishSize="24654" publishTime="1290421581"/>
-          <PublishItem publishSize="24749" publishTime="1290421536"/>
-          <PublishItem publishSize="24752" publishTime="1290421489"/>
-          <PublishItem publishSize="24733" publishTime="1290421352"/>
-          <PublishItem publishSize="24715" publishTime="1290419678"/>
-          <PublishItem publishSize="24873" publishTime="1290419351"/>
-          <PublishItem publishSize="24856" publishTime="1290419136"/>
-          <PublishItem publishSize="24856" publishTime="1290418817"/>
-          <PublishItem publishSize="24847" publishTime="1290418787"/>
-          <PublishItem publishSize="24855" publishTime="1290418533"/>
-          <PublishItem publishSize="24840" publishTime="1290418489"/>
-          <PublishItem publishSize="24853" publishTime="1290418101"/>
-          <PublishItem publishSize="24867" publishTime="1290418091"/>
-          <PublishItem publishSize="24777" publishTime="1290418043"/>
-          <PublishItem publishSize="24844" publishTime="1290417906"/>
-          <PublishItem publishSize="13982" publishTime="1290417855"/>
-          <PublishItem publishSize="13982" publishTime="1290417812"/>
+          <PublishItem publishSize="24721" publishTime="1290451802"/>
+          <PublishItem publishSize="24729" publishTime="1290451783"/>
+          <PublishItem publishSize="24724" publishTime="1290451747"/>
+          <PublishItem publishSize="24725" publishTime="1290451665"/>
+          <PublishItem publishSize="24722" publishTime="1290451640"/>
+          <PublishItem publishSize="24721" publishTime="1290451604"/>
+          <PublishItem publishSize="24720" publishTime="1290451581"/>
+          <PublishItem publishSize="14027" publishTime="1290451468"/>
+          <PublishItem publishSize="24734" publishTime="1290451362"/>
+          <PublishItem publishSize="24769" publishTime="1290451228"/>
+          <PublishItem publishSize="24759" publishTime="1290450971"/>
+          <PublishItem publishSize="24768" publishTime="1290450927"/>
+          <PublishItem publishSize="24744" publishTime="1290450834"/>
+          <PublishItem publishSize="24750" publishTime="1290450797"/>
+          <PublishItem publishSize="24750" publishTime="1290450698"/>
+          <PublishItem publishSize="24756" publishTime="1290450620"/>
+          <PublishItem publishSize="24770" publishTime="1290449339"/>
+          <PublishItem publishSize="24783" publishTime="1290449269"/>
+          <PublishItem publishSize="24769" publishTime="1290449158"/>
+          <PublishItem publishSize="24775" publishTime="1290449133"/>
      </publishHistory>
 </DOMDocument>

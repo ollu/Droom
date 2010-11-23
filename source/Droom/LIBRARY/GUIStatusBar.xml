@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GUIStatusBar" itemID="4cea28da-00000294" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="nu.fickla.droom.display.GUIStatusBar" sourceFlashFilepath="../../../../../GIT/FLASH/SpaceShooter/trunk/SpaceShooter.fla" sourceLibraryItemHRef="Resources/Health and shield" sourceLastModified="1241597441" lastModified="1290414341" lastUniqueIdentifier="9" isSpriteSubclass="true">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="GUIStatusBar" itemID="4cea28da-00000294" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="nu.fickla.droom.display.GUIStatusBar" sourceFlashFilepath="../../../../../GIT/FLASH/SpaceShooter/trunk/SpaceShooter.fla" sourceLibraryItemHRef="Resources/Health and shield" sourceLastModified="1241597441" lastModified="1290433831" lastUniqueIdentifier="9" isSpriteSubclass="true">
   <timeline>
     <DOMTimeline name="GUIStatusBar">
       <layers>
@@ -28,7 +28,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Resources/Health and shield bar" name="bar" centerPoint3DX="50" centerPoint3DY="5">
+                <DOMSymbolInstance libraryItemName="Resources/Health and shield bar" name="bar" selected="true" centerPoint3DX="50" centerPoint3DY="5">
                   <transformationPoint>
                     <Point x="50" y="5"/>
                   </transformationPoint>

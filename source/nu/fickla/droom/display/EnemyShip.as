@@ -21,15 +21,16 @@ package nu.fickla.droom.display {
 
 			this.heroRef = heroRef;
 			x = 800;
-			if (yPos == 1) {
-				y = 50;
-				toY = 90;
-			} else {
-				y = 280;
-				toY = 240;
-			}
-			scaleX = scaleY = .7;
-			TweenLite.to(this, .9, {y:toY, delay:1.5});
+			
+//			if (yPos == 1) {
+//				y = 50;
+//				toY = 90;
+//			} else {
+//				y = 280;
+//				toY = 240;
+//			}
+//			scaleX = scaleY = .7;
+//			TweenLite.to(this, .9, {y:toY, delay:1.5});
 
 			fireTimer = new Timer(500 + Math.random() * 500);
 			fireTimer.addEventListener(TimerEvent.TIMER, fireTimerComplete, false, 0, true);

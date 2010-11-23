@@ -6,70 +6,53 @@ package nu.fickla.droom {
 	import nu.fickla.droom.display.Ship;
 	import nu.fickla.droom.display.Star;
 
+	import com.senocular.utils.KeyObject;
+
 	import flash.display.Sprite;
 	import flash.events.Event;
-	import flash.events.MouseEvent;
 	import flash.events.TimerEvent;
 	import flash.media.Sound;
 	import flash.media.SoundChannel;
 	import flash.net.URLRequest;
+	import flash.ui.Keyboard;
 	import flash.utils.Timer;
 
 	// import nl.demonsters.debugger.MonsterDebugger;
 	public class Droom extends Sprite {
 		// public var debugger:MonsterDebugger = new MonsterDebugger(this);
-
 		// Our hero!
-		private var theShip : Ship;
+		private var theHero : Ship;
 		public static var playerScore : uint = 0;
 		private var healthBar : GUIStatusBar;
 		private var shieldBar : GUIStatusBar;
-
+		private var key : KeyObject;
 		// Keep track of every enemy
 		public static var enemyList : Array = new Array();
 		private var enemyShipDelay : uint;
-
 		// How many enemy ships per wave for each level
 		private var enemyWaveLength : Array = [5, 7, 9];
 		private var enemyWaveCounter : uint = 0;
 		private var countDownTilNextWave : Timer;
-
 		// Wait for music
 		private var enemyFirstWaveDelay : Timer;
-
 		// Passed when we create enemy ship so we can change style of each wave
 		private var enemyStartPos : int = 1;
 		private var countForMiniBoss : uint = 0;
 		private var countForBoss : uint = 0;
-
 		// Current level of the game
 		public static var gameLevel : uint = 0;
-
+		private var gameTimer : Timer;
 		// Create an instance of the Sound class
 		private var soundClip : Sound = new Sound();
 		private var sndChannel : SoundChannel = new SoundChannel();
 
-		// Startscreen
-		private var splashScreen : SplashScreen;
-
 		public function Droom() : void {
-			splashScreen = new SplashScreen();
-			splashScreen.x = stage.stageWidth / 2;
-			splashScreen.y = 130;
-			stage.addChild(splashScreen);
-			splashScreen.addEventListener(MouseEvent.CLICK, startGame, false, 0, true);
-
-			stage.addEventListener(Event.MOUSE_LEAVE, windowNotActive);
-			stage.addEventListener(Event.ACTIVATE, windowActive);
+			startGame();
 		}
 
-		private function startGame(evt : MouseEvent) : void {
+		private function startGame() : void {
 			// Activates keyboard input
 			stage.focus = this;
-
-			splashScreen.removeEventListener(MouseEvent.CLICK, startGame);
-			stage.removeChild(splashScreen);
-			splashScreen = null;
 
 			soundClip.load(new URLRequest("game_theme.mp3"));
 
@@ -81,24 +64,81 @@ package nu.fickla.droom {
 			// Background stars
 			createStars(100);
 
-			theShip = new Ship();
-			stage.addChild(theShip);
+			// Create out hero
+			theHero = new Ship();
+			theHero.speed = 4;
+			theHero.addEventListener(Event.ADDED_TO_STAGE, readyOnStage, false, 0, true);
+			stage.addChild(theHero);
 
 			playerScore_txt.text = "0000000";
 
-/*
-			healthBar = new GUIStatusBar();
+			healthBar = new GUIStatusBar(100);
 			stage.addChild(healthBar);
 
-			shieldBar = new GUIStatusBar();
+			shieldBar = new GUIStatusBar(0);
 			stage.addChild(shieldBar);
-*/
+
 			enemyFirstWaveDelay = new Timer(7500, 1);
 			enemyFirstWaveDelay.addEventListener(TimerEvent.TIMER, enemySetup, false, 0, true);
 			enemyFirstWaveDelay.start();
 
 			countDownTilNextWave = new Timer(3000);
 			countDownTilNextWave.addEventListener(TimerEvent.TIMER, nextWave, false, 0, true);
+		}
+
+		private function readyOnStage(event : Event) : void {
+			key = new KeyObject(stage);
+
+			gameTimer = new Timer(10);
+			gameTimer.addEventListener(TimerEvent.TIMER, gameMover, false, 0, true);
+			gameTimer.start();
+		}
+
+		private function gameMover(event : TimerEvent) : void {
+			shipHandler();
+//			if (enemyList)
+//				moveEnemies();
+				
+			// checkForCollisions();
+			// checkForHits();
+				
+		}
+
+		private function moveEnemies() : void {
+			for each(var enemy in enemyList) {
+				enemy.x -= enemy.speed;
+			}
+			
+		}
+
+		private function shipHandler() : void {
+			var xPos : int = theHero.x;
+			var yPos : int = theHero.y;
+			var speed : uint = theHero.speed;
+
+			if (key.isDown(Keyboard.RIGHT)) {
+				xPos > stage.stageWidth - 60 ? xPos = stage.stageWidth - 40 : theHero.x += speed;
+			}
+
+			if (key.isDown(Keyboard.LEFT)) {
+				xPos < 70 ? xPos = 60 : theHero.x -= speed;
+			}
+
+			if (key.isDown(Keyboard.UP)) {
+				yPos < 60 ? yPos = 50 : theHero.y = yPos - speed;
+			}
+
+			if (key.isDown(Keyboard.DOWN)) {
+				yPos > stage.stageHeight - 40 ? yPos = stage.stageHeight - 30 : theHero.y += speed;
+			}
+
+			// if (key.isDown(Keyboard.SPACE)) {
+			// if (canFire) {
+			// fireBullet();
+			// canFire = false;
+			// fireTimer.start();
+			// }
+			// }
 		}
 
 		private function enemySetup(event : Event) : void {
@@ -111,16 +151,15 @@ package nu.fickla.droom {
 
 		private function loop(event : Event) : void {
 			if (enemyWaveCounter != 0 ) {
-				
 				enemyShipDelay++;
 
-				if (enemyShipDelay > 10) {
+				if (enemyShipDelay > 15) {
 					enemyShipDelay = 0;
 					enemyWaveCounter--;
 
 					if (enemyWaveCounter == 0) countDownTilNextWave.start();
 
-					var enemyShip : EnemyShip = new EnemyShip(theShip, enemyStartPos);
+					var enemyShip : EnemyShip = new EnemyShip(theHero, enemyStartPos);
 					enemyShip.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
 					stage.addChild(enemyShip);
 					enemyList.push(enemyShip);
@@ -138,14 +177,14 @@ package nu.fickla.droom {
 			} else if (countForBoss != 2) {
 				countForMiniBoss = 0;
 				countForBoss++;
-				var miniBoss : MiniBoss = new MiniBoss(theShip);
+				var miniBoss : MiniBoss = new MiniBoss(theHero);
 				stage.addChild(miniBoss);
 				miniBoss.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
 				enemyList.push(miniBoss);
 			} else {
 				countForBoss = 0;
 				countForMiniBoss = 0;
-				var boss : Boss = new Boss(theShip);
+				var boss : Boss = new Boss(theHero);
 				stage.addChild(boss);
 				boss.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
 				enemyList.push(boss);
@@ -179,17 +218,13 @@ package nu.fickla.droom {
 			playerScore_txt.text = tempScore;
 		}
 
-		private function windowNotActive(event : Event) : void {
-			trace("PAUSE GAME!");
-			// gamePaused = new Paused();
-			// gamePaused.x = stage.stageHeight / 2;
-			// gamePaused.y = stage.stageWidth / 2;
-			// stage.addChild(gamePaused);
+		private function checkForCollisions() : void {
+			for (var i : int = 0; i < Droom.enemyList.length; i++) {
+				if (hitTestObject(Droom.enemyList[i])) {
+					theHero.explode();
+				}
+			}
 		}
-
-		private function windowActive(evt : Event) : void {
-			// stage.removeChild(gamePaused);
-			// gamePaused = null;
-		}
+		// End class and package
 	}
 }

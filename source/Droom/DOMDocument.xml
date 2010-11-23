@@ -8,8 +8,8 @@
      </fonts>
      <symbols>
           <Include href="Boss.xml"/>
+          <Include href="EnemyDroone.xml"/>
           <Include href="EnemyMissile.xml"/>
-          <Include href="EnemyShip.xml"/>
           <Include href="EnemyShips/Boss ship 1.xml" loadImmediate="false"/>
           <Include href="Explosion.xml"/>
           <Include href="GameOverMenu.xml"/>
@@ -397,6 +397,16 @@
      </persistentData>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="24790" publishTime="1290514521"/>
+          <PublishItem publishSize="24730" publishTime="1290507160"/>
+          <PublishItem publishSize="24726" publishTime="1290507135"/>
+          <PublishItem publishSize="24798" publishTime="1290506288"/>
+          <PublishItem publishSize="24798" publishTime="1290506272"/>
+          <PublishItem publishSize="24798" publishTime="1290506257"/>
+          <PublishItem publishSize="24798" publishTime="1290506243"/>
+          <PublishItem publishSize="24798" publishTime="1290506219"/>
+          <PublishItem publishSize="24798" publishTime="1290506184"/>
+          <PublishItem publishSize="24789" publishTime="1290502924"/>
           <PublishItem publishSize="24721" publishTime="1290451802"/>
           <PublishItem publishSize="24729" publishTime="1290451783"/>
           <PublishItem publishSize="24724" publishTime="1290451747"/>
@@ -407,15 +417,5 @@
           <PublishItem publishSize="14027" publishTime="1290451468"/>
           <PublishItem publishSize="24734" publishTime="1290451362"/>
           <PublishItem publishSize="24769" publishTime="1290451228"/>
-          <PublishItem publishSize="24759" publishTime="1290450971"/>
-          <PublishItem publishSize="24768" publishTime="1290450927"/>
-          <PublishItem publishSize="24744" publishTime="1290450834"/>
-          <PublishItem publishSize="24750" publishTime="1290450797"/>
-          <PublishItem publishSize="24750" publishTime="1290450698"/>
-          <PublishItem publishSize="24756" publishTime="1290450620"/>
-          <PublishItem publishSize="24770" publishTime="1290449339"/>
-          <PublishItem publishSize="24783" publishTime="1290449269"/>
-          <PublishItem publishSize="24769" publishTime="1290449158"/>
-          <PublishItem publishSize="24775" publishTime="1290449133"/>
      </publishHistory>
 </DOMDocument>

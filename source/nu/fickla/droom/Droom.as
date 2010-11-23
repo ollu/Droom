@@ -1,8 +1,10 @@
 package nu.fickla.droom {
 	import nu.fickla.droom.display.Boss;
-	import nu.fickla.droom.display.EnemyShip;
+	import nu.fickla.droom.display.EnemyDroone;
+	import nu.fickla.droom.display.Explosion;
 	import nu.fickla.droom.display.GUIStatusBar;
 	import nu.fickla.droom.display.MiniBoss;
+	import nu.fickla.droom.display.PointBurst;
 	import nu.fickla.droom.display.Ship;
 	import nu.fickla.droom.display.Star;
 
@@ -100,8 +102,9 @@ package nu.fickla.droom {
 			shipHandler();
 			
 			moveStars();
-//			if (enemyList)
-//				moveEnemies();
+			
+			if (enemyList)
+				moveEnemies();
 				
 			// checkForCollisions();
 			// checkForHits();
@@ -109,8 +112,8 @@ package nu.fickla.droom {
 		}
 
 		private function moveEnemies() : void {
-			for each(var enemy in enemyList) {
-				enemy.x -= enemy.speed;
+			for each(var enemy : EnemyDroone in enemyList) {
+				enemy.move();
 			}
 			
 		}
@@ -151,24 +154,24 @@ package nu.fickla.droom {
 		}
 
 		private function enemySetup(event : Event) : void {
-			addEventListener(Event.ENTER_FRAME, loop, false, 0, true);
+			addEventListener(Event.ENTER_FRAME, createEnemyShips, false, 0, true);
 		}
 
 		private function playSnd(event : Event) : void {
 			// sndChannel = soundClip.play(0, int.MAX_VALUE);
 		}
 
-		private function loop(event : Event) : void {
+		private function createEnemyShips(event : Event) : void {
 			if (enemyWaveCounter != 0 ) {
 				enemyShipDelay++;
 
-				if (enemyShipDelay > 15) {
+				if (enemyShipDelay > 10) {
 					enemyShipDelay = 0;
 					enemyWaveCounter--;
 
 					if (enemyWaveCounter == 0) countDownTilNextWave.start();
 
-					var enemyShip : EnemyShip = new EnemyShip(theHero, enemyStartPos);
+					var enemyShip : EnemyDroone = new EnemyDroone(theHero, enemyStartPos);
 					enemyShip.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
 					stage.addChild(enemyShip);
 					enemyList.push(enemyShip);
@@ -236,6 +239,13 @@ package nu.fickla.droom {
 					theHero.explode();
 				}
 			}
+		}
+		
+		private function explode() : void {
+			var explosion : Explosion = new Explosion(stage, x, y);
+			stage.addChild(explosion);
+			var pointBurst : PointBurst = new PointBurst(x, y, 50);
+			stage.addChild(pointBurst);
 		}
 		// End class and package
 	}

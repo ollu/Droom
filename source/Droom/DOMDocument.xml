@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#332F2F" width="800" height="320" frameRate="30" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 11.0 build 485" majorVersion="11" buildNumber="485" objectsSnapTo="false" viewAngle3D="74.2651684569298" previewMode="full" nextSceneIdentifier="17" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#332F2F" width="800" height="320" frameRate="30" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 11.0 build 485" majorVersion="11" buildNumber="485" rulerVisible="true" objectsSnapTo="false" viewAngle3D="74.2651684569298" previewMode="full" nextSceneIdentifier="17" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
           <DOMFolderItem name="EnemyShips" itemID="4a031846-000003fb"/>
           <DOMFolderItem name="Resources" itemID="4a03187b-000003ff"/>
@@ -6,6 +6,9 @@
      <fonts>
           <DOMFontItem name="WhimsyTTnumerals" itemID="4cea2854-00000286" font="WhimsyTT" size="0" id="1" sourceLastImported="1290162967" embedRanges="3"/>
      </fonts>
+     <media>
+          <DOMBitmapItem name="GUI_top.png" itemID="4ceebf13-00001113" sourceExternalFilepath="./LIBRARY/GUI_top.png" sourceLastImported="1290714681" sourcePlatform="macintosh" externalFileSize="8559" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="GUI_top.png" bitmapDataHRef="M 3 1290714851.dat" frameRight="16000" frameBottom="400"/>
+     </media>
      <symbols>
           <Include href="Boss.xml"/>
           <Include href="EnemyMissile.xml"/>
@@ -13,10 +16,11 @@
           <Include href="EnemyShips/Boss ship 1.xml" loadImmediate="false"/>
           <Include href="Explosion.xml"/>
           <Include href="GameOverMenu.xml"/>
-          <Include href="GUIStatusBar.xml"/>
+          <Include href="Grf_GUIBar.xml" itemIcon="1" loadImmediate="false"/>
           <Include href="MiniBoss.xml"/>
           <Include href="Missile.xml"/>
           <Include href="PointBurst.xml"/>
+          <Include href="PowerUps.xml"/>
           <Include href="PowerUpShip.xml" loadImmediate="false"/>
           <Include href="Resources/AlienHead.xml" loadImmediate="false"/>
           <Include href="Resources/AlienLamp.xml" loadImmediate="false"/>
@@ -31,40 +35,43 @@
           <Include href="SplashScreen.xml"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Scene 1">
+          <DOMTimeline name="Scene 1" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;16&lt;/guideline&gt;&lt;/guidelines&gt;'>
                <layers>
-                    <DOMLayer name="AS" color="#4FFF4F" locked="true" autoNamed="false">
-                         <frames>
-                              <DOMFrame index="0" keyMode="9728">
-                                   <elements/>
-                              </DOMFrame>
-                         </frames>
-                    </DOMLayer>
-                    <DOMLayer name="Score, health and shield" color="#FF4FFF" autoNamed="false">
+                    <DOMLayer name="Score" color="#FF4FFF" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMDynamicText name="playerScore_txt" width="161.95" height="24.6" includeOutlines="true" isSelectable="false" lineType="multiline">
+                                        <DOMDynamicText name="playerScore_txt" width="163.95" height="11" includeOutlines="true" isSelectable="false" lineType="multiline">
                                              <matrix>
-                                                  <Matrix tx="218" ty="5"/>
+                                                  <Matrix tx="258" ty="6"/>
                                              </matrix>
                                              <textRuns>
                                                   <DOMTextRun>
                                                        <characters></characters>
                                                        <textAttrs>
-                                                            <DOMTextAttrs aliasText="false" size="25" bitmapSize="500" face="WhimsyTT" fillColor="#CCCCCC"/>
+                                                            <DOMTextAttrs aliasText="false" bitmapSize="240" face="WhimsyTT" fillColor="#494949"/>
                                                        </textAttrs>
                                                   </DOMTextRun>
                                              </textRuns>
-                                             <filters>
-                                                  <GlowFilter blurX="4" blurY="4" color="#CCCCCC" inner="true" knockout="true" quality="3"/>
-                                             </filters>
                                         </DOMDynamicText>
                                    </elements>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="Background" color="#FF800A" locked="true" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="Life &amp; Shield bg" color="#4FFF4F" current="true" isSelected="true" autoNamed="false">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="Grf_GUIBar" name="" selected="true" symbolType="graphic" loop="loop">
+                                             <transformationPoint>
+                                                  <Point x="399.6" y="10"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="Background" color="#FF800A" locked="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
@@ -81,7 +88,7 @@
                                                   </FillStyle>
                                              </fills>
                                              <edges>
-                                                  <Edge fillStyle1="1" edges="!16000 6400|0 6400!0 6400|0 0!0 0|16000 0!16000 0|16000 6400"/>
+                                                  <Edge fillStyle1="1" edges="!16000 6400S2|0 6400!0 6400|0 0!0 0|16000 0!16000 0|16000 6400"/>
                                              </edges>
                                         </DOMShape>
                                    </elements>
@@ -394,25 +401,25 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
-          <PublishItem publishSize="24822" publishTime="1290542555"/>
-          <PublishItem publishSize="24822" publishTime="1290542528"/>
-          <PublishItem publishSize="24821" publishTime="1290542436"/>
-          <PublishItem publishSize="24821" publishTime="1290542347"/>
-          <PublishItem publishSize="24818" publishTime="1290542339"/>
-          <PublishItem publishSize="24824" publishTime="1290542322"/>
-          <PublishItem publishSize="24813" publishTime="1290542304"/>
-          <PublishItem publishSize="24771" publishTime="1290531939"/>
-          <PublishItem publishSize="24620" publishTime="1290427157"/>
-          <PublishItem publishSize="24615" publishTime="1290427135"/>
-          <PublishItem publishSize="24633" publishTime="1290427078"/>
-          <PublishItem publishSize="24654" publishTime="1290421581"/>
-          <PublishItem publishSize="24749" publishTime="1290421536"/>
-          <PublishItem publishSize="24752" publishTime="1290421489"/>
-          <PublishItem publishSize="24733" publishTime="1290421352"/>
-          <PublishItem publishSize="24715" publishTime="1290419678"/>
-          <PublishItem publishSize="24873" publishTime="1290419351"/>
-          <PublishItem publishSize="24856" publishTime="1290419136"/>
-          <PublishItem publishSize="24856" publishTime="1290418817"/>
-          <PublishItem publishSize="24847" publishTime="1290418787"/>
+          <PublishItem publishSize="33136" publishTime="1290714901"/>
+          <PublishItem publishSize="33092" publishTime="1290714551"/>
+          <PublishItem publishSize="33092" publishTime="1290714527"/>
+          <PublishItem publishSize="33120" publishTime="1290714513"/>
+          <PublishItem publishSize="33103" publishTime="1290714418"/>
+          <PublishItem publishSize="33103" publishTime="1290713562"/>
+          <PublishItem publishSize="33103" publishTime="1290713543"/>
+          <PublishItem publishSize="33103" publishTime="1290713512"/>
+          <PublishItem publishSize="33090" publishTime="1290712914"/>
+          <PublishItem publishSize="33087" publishTime="1290712871"/>
+          <PublishItem publishSize="25037" publishTime="1290712814"/>
+          <PublishItem publishSize="25054" publishTime="1290712800"/>
+          <PublishItem publishSize="24933" publishTime="1290712774"/>
+          <PublishItem publishSize="25053" publishTime="1290712519"/>
+          <PublishItem publishSize="25060" publishTime="1290712374"/>
+          <PublishItem publishSize="25065" publishTime="1290711099"/>
+          <PublishItem publishSize="25089" publishTime="1290710985"/>
+          <PublishItem publishSize="25084" publishTime="1290710976"/>
+          <PublishItem publishSize="25092" publishTime="1290710899"/>
+          <PublishItem publishSize="25094" publishTime="1290710814"/>
      </publishHistory>
 </DOMDocument>

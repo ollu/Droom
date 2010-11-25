@@ -22,6 +22,7 @@ package nu.fickla.droom.display {
             x -= speed;
             if (x > stageRef.stageWidth || x < -10) removeSelf();
             if (hitTestObject(heroRef)) {
+            	heroRef.takeDamage(10);
                 removeSelf();
             }
         }

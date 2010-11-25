@@ -23,15 +23,16 @@ package nu.fickla.droom.display {
 		}
 
 		private function readyOnStage(event : Event) : void {
-			healthBar = new GUIStatusBar(100);
-			shieldBar = new GUIStatusBar(0);
-			healthBar.x = 5;
-			healthBar.y = 5;
-			shieldBar.x = healthBar.x;
-			shieldBar.y = healthBar.y + 12;
-
+			healthBar = new GUIStatusBar(100, 0xBC7B7B);
+			healthBar.x = 21;
+			healthBar.y = 6;
 			stage.addChild(healthBar);
+
+			shieldBar = new GUIStatusBar(0, 0x7B9ABC);
+			shieldBar.x = healthBar.x + 130;
+			shieldBar.y = 6;
 			stage.addChild(shieldBar);
+
 
 			this.x = 100;
 			this.y = stage.stageHeight / 2;
@@ -41,10 +42,10 @@ package nu.fickla.droom.display {
 			fireTimer = new Timer(300, 1);
 			fireTimer.addEventListener(TimerEvent.TIMER, fireTimerComplete, false, 0, true);
 
-			addEventListener(Event.ENTER_FRAME, loop, false, 0, true);
+			addEventListener(Event.ENTER_FRAME, move, false, 0, true);
 		}
 
-		public function loop(event : Event) : void {
+		public function move(event : Event) : void {
 			if (Key.isDown(Keyboard.RIGHT)) {
 				x > stage.stageWidth - 60 ? x = stage.stageWidth - 40 : x = x + speed;
 			}
@@ -91,10 +92,10 @@ package nu.fickla.droom.display {
 		public function takeDamage(damage : uint) : void {
 			if (shipShield > 0) {
 				shipShield -= damage;
-				// Shield.update(shipShield);
+				shieldBar.status = shipShield;
 			} else {
 				shipHealth -= damage;
-				// Health.update(shipHealth);
+				healthBar.status = shipHealth;
 			}
 		}
 
@@ -105,7 +106,7 @@ package nu.fickla.droom.display {
 		}
 
 		private function removeSelf() : void {
-			removeEventListener(Event.ENTER_FRAME, loop);
+			removeEventListener(Event.ENTER_FRAME, move);
 			if (stage.contains(this)) stage.removeChild(this);
 		}
 	}

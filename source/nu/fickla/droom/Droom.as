@@ -1,7 +1,6 @@
 package nu.fickla.droom {
 	import nu.fickla.droom.display.Boss;
 	import nu.fickla.droom.display.EnemyShip;
-	import nu.fickla.droom.display.GUIStatusBar;
 	import nu.fickla.droom.display.MiniBoss;
 	import nu.fickla.droom.display.Ship;
 	import nu.fickla.droom.display.Star;

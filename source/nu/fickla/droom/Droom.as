@@ -22,8 +22,6 @@ package nu.fickla.droom {
 		// Our hero!
 		private var theShip : Ship;
 		public static var playerScore : uint = 0;
-		private var healthBar : GUIStatusBar;
-		private var shieldBar : GUIStatusBar;
 
 		// Keep track of every enemy
 		public static var enemyList : Array = new Array();
@@ -58,9 +56,6 @@ package nu.fickla.droom {
 			splashScreen.y = 130;
 			stage.addChild(splashScreen);
 			splashScreen.addEventListener(MouseEvent.CLICK, startGame, false, 0, true);
-
-			stage.addEventListener(Event.MOUSE_LEAVE, windowNotActive);
-			stage.addEventListener(Event.ACTIVATE, windowActive);
 		}
 
 		private function startGame(evt : MouseEvent) : void {
@@ -86,13 +81,6 @@ package nu.fickla.droom {
 
 			playerScore_txt.text = "0000000";
 
-/*
-			healthBar = new GUIStatusBar();
-			stage.addChild(healthBar);
-
-			shieldBar = new GUIStatusBar();
-			stage.addChild(shieldBar);
-*/
 			enemyFirstWaveDelay = new Timer(7500, 1);
 			enemyFirstWaveDelay.addEventListener(TimerEvent.TIMER, enemySetup, false, 0, true);
 			enemyFirstWaveDelay.start();
@@ -102,14 +90,14 @@ package nu.fickla.droom {
 		}
 
 		private function enemySetup(event : Event) : void {
-			addEventListener(Event.ENTER_FRAME, loop, false, 0, true);
+			addEventListener(Event.ENTER_FRAME, createEnemies, false, 0, true);
 		}
 
 		private function playSnd(event : Event) : void {
 			// sndChannel = soundClip.play(0, int.MAX_VALUE);
 		}
 
-		private function loop(event : Event) : void {
+		private function createEnemies(event : Event) : void {
 			if (enemyWaveCounter != 0 ) {
 				
 				enemyShipDelay++;
@@ -161,7 +149,6 @@ package nu.fickla.droom {
 				star.y = 5 + Math.random() * stage.stageHeight - 10;
 				addChild(star);
 			}
-			;
 		}
 
 		private function removeEnemy(event : Event) : void {
@@ -177,19 +164,6 @@ package nu.fickla.droom {
 		private function updateScoreBoard() : void {
 			var tempScore : String = String(playerScore + 10000000).substr(1, 7);
 			playerScore_txt.text = tempScore;
-		}
-
-		private function windowNotActive(event : Event) : void {
-			trace("PAUSE GAME!");
-			// gamePaused = new Paused();
-			// gamePaused.x = stage.stageHeight / 2;
-			// gamePaused.y = stage.stageWidth / 2;
-			// stage.addChild(gamePaused);
-		}
-
-		private function windowActive(evt : Event) : void {
-			// stage.removeChild(gamePaused);
-			// gamePaused = null;
 		}
 	}
 }

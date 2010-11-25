@@ -14,12 +14,23 @@ package nu.fickla.droom.display {
 		private var speed : uint = 4;
 		public var shipShield : uint = 0;
 		public var shipHealth : uint = 100;
+		private var healthBar : GUIStatusBar;
+		private var shieldBar : GUIStatusBar;
 		// Fire related variables
 		private var fireTimer : Timer;
 		private var canFire : Boolean = true;
 
 		public function Ship() {
 			addEventListener(Event.ADDED_TO_STAGE, readyOnStage, false, 0, true);
+			healthBar = new GUIStatusBar(100);
+			shieldBar = new GUIStatusBar(0);
+			healthBar.x = 5;
+			healthBar.y = 5;
+			shieldBar.x = healthBar.x;
+			shieldBar.y = healthBar.y + 12;
+
+			stage.addChild(healthBar);
+			stage.addChild(shieldBar);
 		}
 
 		private function readyOnStage(event : Event) : void {

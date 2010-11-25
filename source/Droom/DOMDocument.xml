@@ -40,13 +40,13 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="Score, health and shield" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="Score, health and shield" color="#FF4FFF" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMDynamicText name="playerScore_txt" selected="true" width="161.95" height="24.6" includeOutlines="true" isSelectable="false" lineType="multiline">
+                                        <DOMDynamicText name="playerScore_txt" width="161.95" height="24.6" includeOutlines="true" isSelectable="false" lineType="multiline">
                                              <matrix>
-                                                  <Matrix tx="138" ty="5"/>
+                                                  <Matrix tx="218" ty="5"/>
                                              </matrix>
                                              <textRuns>
                                                   <DOMTextRun>
@@ -64,7 +64,7 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="Background" color="#FF800A" locked="true" autoNamed="false">
+                    <DOMLayer name="Background" color="#FF800A" locked="true" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
@@ -394,6 +394,14 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="24822" publishTime="1290542555"/>
+          <PublishItem publishSize="24822" publishTime="1290542528"/>
+          <PublishItem publishSize="24821" publishTime="1290542436"/>
+          <PublishItem publishSize="24821" publishTime="1290542347"/>
+          <PublishItem publishSize="24818" publishTime="1290542339"/>
+          <PublishItem publishSize="24824" publishTime="1290542322"/>
+          <PublishItem publishSize="24813" publishTime="1290542304"/>
+          <PublishItem publishSize="24771" publishTime="1290531939"/>
           <PublishItem publishSize="24620" publishTime="1290427157"/>
           <PublishItem publishSize="24615" publishTime="1290427135"/>
           <PublishItem publishSize="24633" publishTime="1290427078"/>
@@ -406,13 +414,5 @@
           <PublishItem publishSize="24856" publishTime="1290419136"/>
           <PublishItem publishSize="24856" publishTime="1290418817"/>
           <PublishItem publishSize="24847" publishTime="1290418787"/>
-          <PublishItem publishSize="24855" publishTime="1290418533"/>
-          <PublishItem publishSize="24840" publishTime="1290418489"/>
-          <PublishItem publishSize="24853" publishTime="1290418101"/>
-          <PublishItem publishSize="24867" publishTime="1290418091"/>
-          <PublishItem publishSize="24777" publishTime="1290418043"/>
-          <PublishItem publishSize="24844" publishTime="1290417906"/>
-          <PublishItem publishSize="13982" publishTime="1290417855"/>
-          <PublishItem publishSize="13982" publishTime="1290417812"/>
      </publishHistory>
 </DOMDocument>

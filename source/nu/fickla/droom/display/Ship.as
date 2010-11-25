@@ -1,7 +1,6 @@
 package nu.fickla.droom.display {
 	import nu.fickla.droom.Droom;
-
-	import com.senocular.utils.KeyObject;
+	import nu.fickla.droom.utils.Key;
 
 	import flash.display.MovieClip;
 	import flash.events.Event;
@@ -10,7 +9,6 @@ package nu.fickla.droom.display {
 	import flash.utils.Timer;
 
 	public class Ship extends MovieClip {
-		private var key : KeyObject;
 		private var speed : uint = 4;
 		public var shipShield : uint = 0;
 		public var shipHealth : uint = 100;
@@ -22,6 +20,9 @@ package nu.fickla.droom.display {
 
 		public function Ship() {
 			addEventListener(Event.ADDED_TO_STAGE, readyOnStage, false, 0, true);
+		}
+
+		private function readyOnStage(event : Event) : void {
 			healthBar = new GUIStatusBar(100);
 			shieldBar = new GUIStatusBar(0);
 			healthBar.x = 5;
@@ -31,13 +32,11 @@ package nu.fickla.droom.display {
 
 			stage.addChild(healthBar);
 			stage.addChild(shieldBar);
-		}
 
-		private function readyOnStage(event : Event) : void {
 			this.x = 100;
 			this.y = stage.stageHeight / 2;
 
-			key = new KeyObject(stage);
+			Key.init(stage);
 
 			fireTimer = new Timer(300, 1);
 			fireTimer.addEventListener(TimerEvent.TIMER, fireTimerComplete, false, 0, true);
@@ -46,23 +45,23 @@ package nu.fickla.droom.display {
 		}
 
 		public function loop(event : Event) : void {
-			if (key.isDown(Keyboard.RIGHT)) {
+			if (Key.isDown(Keyboard.RIGHT)) {
 				x > stage.stageWidth - 60 ? x = stage.stageWidth - 40 : x = x + speed;
 			}
 
-			if (key.isDown(Keyboard.LEFT)) {
+			if (Key.isDown(Keyboard.LEFT)) {
 				x < 70 ? x = 60 : x = x - speed;
 			}
 
-			if (key.isDown(Keyboard.UP)) {
+			if (Key.isDown(Keyboard.UP)) {
 				y < 60 ? y = 50 : y = y - speed;
 			}
 
-			if (key.isDown(Keyboard.DOWN)) {
+			if (Key.isDown(Keyboard.DOWN)) {
 				y > stage.stageHeight - 40 ? y = stage.stageHeight - 30 : y = y + speed;
 			}
 
-			if (key.isDown(Keyboard.SPACE)) {
+			if (Key.isDown(Keyboard.SPACE)) {
 				if (canFire) {
 					fireBullet();
 					canFire = false;

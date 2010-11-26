@@ -1,6 +1,6 @@
 package nu.fickla.droom.display {
 	import nu.fickla.droom.Droom;
-	import nu.fickla.droom.utils.Key;
+	import nu.fickla.utils.Key;
 
 	import flash.display.MovieClip;
 	import flash.events.Event;

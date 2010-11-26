@@ -1,4 +1,4 @@
-package nu.fickla.droom.utils {
+package nu.fickla.utils {
 	import flash.events.KeyboardEvent;
 	import flash.display.Stage;
 	/**

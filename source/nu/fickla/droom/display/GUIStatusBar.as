@@ -25,11 +25,8 @@ package nu.fickla.droom.display {
 			graphics.endFill();
 		}
 
-		public function get status() : int {
-			return _status;
-		}
-
 		public function set status(value : int) : void {
+			if (value < 0 ) value = 0;
 			_status = value;
 			reDrawStatusBar();
 		}

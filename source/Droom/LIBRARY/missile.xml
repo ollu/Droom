@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Missile" itemID="4a0a8057-00000230" linkageExportForAS="true" linkageClassName="nu.fickla.droom.display.Missile" sourceLibraryItemHRef="Symbol 1" lastModified="1290414827">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Missile" itemID="4a0a8057-00000230" linkageExportForAS="true" linkageBaseClass="flash.display.Sprite" linkageClassName="nu.fickla.droom.display.Missile" sourceLibraryItemHRef="Symbol 1" lastModified="1290787525" lastUniqueIdentifier="1" isSpriteSubclass="true">
   <timeline>
     <DOMTimeline name="Missile">
       <layers>
@@ -7,23 +7,29 @@
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMShape>
-                  <strokes>
-                    <StrokeStyle index="1">
-                      <SolidStroke scaleMode="normal" weight="2">
-                        <fill>
-                          <LinearGradient>
-                            <matrix>
-                              <Matrix a="0.002166748046875" d="0.001220703125" tx="1.5"/>
-                            </matrix>
-                            <GradientEntry color="#6BCFF6" ratio="0"/>
-                            <GradientEntry color="#FFFFFF" ratio="1"/>
-                          </LinearGradient>
-                        </fill>
-                      </SolidStroke>
-                    </StrokeStyle>
-                  </strokes>
+                  <fills>
+                    <FillStyle index="1">
+                      <LinearGradient>
+                        <matrix>
+                          <Matrix a="0.0073394775390625" d="0.001220703125" tx="6"/>
+                        </matrix>
+                        <GradientEntry color="#6BCFF6" ratio="0"/>
+                        <GradientEntry color="#FFFFFF" ratio="1"/>
+                        <GradientEntry color="#CCCCCC" ratio="1"/>
+                      </LinearGradient>
+                    </FillStyle>
+                  </fills>
                   <edges>
-                    <Edge strokeStyle="1" edges="!0 0|60 0"/>
+                    <Edge fillStyle1="1" edges="!120 -20[171 -20 206 -14!206 -14[241 -8 241 0!241 0[241 8 206 14!206 14[171 20 120 20!120 20[71 20 35 14!35 14[0 8 0 0!0 0[0 -8 35 -14!35 -14[71 -20 120 -20"/>
+                    <Edge cubics="!120 106(;154,106 183,108 206,112q120 106Q171 106q206 112);"/>
+                    <Edge cubics="!35 112(;59,108 88,106 120,106q35 112Q71 106q120 106);"/>
+                    <Edge cubics="!35 140(;12,136 0,131 0,126q35 140Q0 134q0 126);"/>
+                    <Edge cubics="!120 146(;88,146 59,144 35,140q120 146Q71 146q35 140);"/>
+                    <Edge cubics="!206 140(;183,144 154,146 120,146q206 140Q171 146q120 146);"/>
+                    <Edge cubics="!241 126(;241,131 229,136 206,140q241 126Q241 134q206 140);"/>
+                    <Edge cubics="!206 112(;229,116 241,121 241,126q206 112Q241 118q241 126);"/>
+                    <Edge cubics="!0 126(0,126;0,121 12,116 35,112q0 126Q0 118q35 112);"/>
+                    <Edge cubics="!0 0(;0,0 60,0 60,0q0 0 60 0);"/>
                   </edges>
                 </DOMShape>
               </elements>

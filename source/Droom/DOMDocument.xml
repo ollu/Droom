@@ -1,7 +1,7 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#332F2F" width="800" height="320" frameRate="30" currentTimeline="1" xflVersion="2.0" creatorInfo="Adobe Flash Professional CS5" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 11.0 build 485" majorVersion="11" buildNumber="485" rulerVisible="true" objectsSnapTo="false" viewAngle3D="74.2651684569298" previewMode="full" nextSceneIdentifier="17" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false">
      <folders>
           <DOMFolderItem name="EnemyShips" itemID="4a031846-000003fb"/>
-          <DOMFolderItem name="Resources" itemID="4a03187b-000003ff" isExpanded="true"/>
+          <DOMFolderItem name="Resources" itemID="4a03187b-000003ff"/>
      </folders>
      <fonts>
           <DOMFontItem name="WhimsyScoreFont" itemID="4cefbb07-0000026b" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="WhimsyScoreFont" font="WhimsyTT" size="0" id="1" sourceLastImported="1290779434" embedRanges="3"/>
@@ -19,7 +19,6 @@
           <Include href="GuiTopBarBg.xml"/>
           <Include href="MiniBoss.xml"/>
           <Include href="Missile.xml"/>
-          <Include href="PointBurst.xml"/>
           <Include href="PowerUps.xml"/>
           <Include href="PowerUpShip.xml" loadImmediate="false"/>
           <Include href="Resources/AlienHead.xml" loadImmediate="false"/>
@@ -367,25 +366,25 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="33640" publishTime="1290789536"/>
+          <PublishItem publishSize="33642" publishTime="1290789307"/>
+          <PublishItem publishSize="33580" publishTime="1290788761"/>
+          <PublishItem publishSize="33567" publishTime="1290788670"/>
+          <PublishItem publishSize="33575" publishTime="1290788648"/>
+          <PublishItem publishSize="33586" publishTime="1290788609"/>
+          <PublishItem publishSize="33583" publishTime="1290788568"/>
+          <PublishItem publishSize="33571" publishTime="1290788552"/>
+          <PublishItem publishSize="33563" publishTime="1290788522"/>
+          <PublishItem publishSize="33544" publishTime="1290788415"/>
+          <PublishItem publishSize="33694" publishTime="1290787781"/>
+          <PublishItem publishSize="33687" publishTime="1290787551"/>
+          <PublishItem publishSize="33689" publishTime="1290787530"/>
+          <PublishItem publishSize="33649" publishTime="1290786846"/>
+          <PublishItem publishSize="33649" publishTime="1290786828"/>
+          <PublishItem publishSize="33644" publishTime="1290784228"/>
+          <PublishItem publishSize="33661" publishTime="1290783836"/>
           <PublishItem publishSize="33668" publishTime="1290780049"/>
           <PublishItem publishSize="33669" publishTime="1290780038"/>
           <PublishItem publishSize="33668" publishTime="1290780014"/>
-          <PublishItem publishSize="33679" publishTime="1290779994"/>
-          <PublishItem publishSize="33676" publishTime="1290779974"/>
-          <PublishItem publishSize="33680" publishTime="1290779964"/>
-          <PublishItem publishSize="33679" publishTime="1290779918"/>
-          <PublishItem publishSize="33680" publishTime="1290779900"/>
-          <PublishItem publishSize="33692" publishTime="1290779882"/>
-          <PublishItem publishSize="33691" publishTime="1290779865"/>
-          <PublishItem publishSize="33674" publishTime="1290779812"/>
-          <PublishItem publishSize="33732" publishTime="1290779769"/>
-          <PublishItem publishSize="33424" publishTime="1290777919"/>
-          <PublishItem publishSize="33466" publishTime="1290777520"/>
-          <PublishItem publishSize="33466" publishTime="1290760054"/>
-          <PublishItem publishSize="33465" publishTime="1290760044"/>
-          <PublishItem publishSize="33457" publishTime="1290760034"/>
-          <PublishItem publishSize="33457" publishTime="1290760026"/>
-          <PublishItem publishSize="33457" publishTime="1290760010"/>
-          <PublishItem publishSize="33457" publishTime="1290760002"/>
      </publishHistory>
 </DOMDocument>

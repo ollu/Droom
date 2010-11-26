@@ -96,6 +96,7 @@ package nu.fickla.droom.display {
 			} else {
 				shipHealth -= damage;
 				healthBar.status = shipHealth;
+				if(shipHealth <= 0) explode();
 			}
 		}
 

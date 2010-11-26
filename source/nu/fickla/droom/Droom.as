@@ -52,14 +52,14 @@ package nu.fickla.droom {
 		private var sndChannel : SoundChannel = new SoundChannel();
 
 		// Startscreen
-		private var splashScreen : SplashScreen;
+		private var splashScreen : Sprite;
 		
 		private var guiTopBackground : Sprite;
 		private var scoreTextField : TextField;
 		private var WhimsyScoreFont : Font;
 
 		public function Droom() : void {
-			splashScreen = new SplashScreen();
+			splashScreen = Library.createSprite("SplashScreen");
 			splashScreen.x = stage.stageWidth / 2;
 			splashScreen.y = 130;
 			stage.addChild(splashScreen);

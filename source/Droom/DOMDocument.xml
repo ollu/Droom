@@ -16,7 +16,7 @@
           <Include href="EnemyShips/Boss ship 1.xml" loadImmediate="false"/>
           <Include href="Explosion.xml"/>
           <Include href="GameOverMenu.xml"/>
-          <Include href="MC_GUIBar.xml"/>
+          <Include href="GuiTopBarBg.xml"/>
           <Include href="MiniBoss.xml"/>
           <Include href="Missile.xml"/>
           <Include href="PointBurst.xml"/>
@@ -367,6 +367,17 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="33668" publishTime="1290780049"/>
+          <PublishItem publishSize="33669" publishTime="1290780038"/>
+          <PublishItem publishSize="33668" publishTime="1290780014"/>
+          <PublishItem publishSize="33679" publishTime="1290779994"/>
+          <PublishItem publishSize="33676" publishTime="1290779974"/>
+          <PublishItem publishSize="33680" publishTime="1290779964"/>
+          <PublishItem publishSize="33679" publishTime="1290779918"/>
+          <PublishItem publishSize="33680" publishTime="1290779900"/>
+          <PublishItem publishSize="33692" publishTime="1290779882"/>
+          <PublishItem publishSize="33691" publishTime="1290779865"/>
+          <PublishItem publishSize="33674" publishTime="1290779812"/>
           <PublishItem publishSize="33732" publishTime="1290779769"/>
           <PublishItem publishSize="33424" publishTime="1290777919"/>
           <PublishItem publishSize="33466" publishTime="1290777520"/>
@@ -376,16 +387,5 @@
           <PublishItem publishSize="33457" publishTime="1290760026"/>
           <PublishItem publishSize="33457" publishTime="1290760010"/>
           <PublishItem publishSize="33457" publishTime="1290760002"/>
-          <PublishItem publishSize="33455" publishTime="1290759903"/>
-          <PublishItem publishSize="33452" publishTime="1290759725"/>
-          <PublishItem publishSize="33454" publishTime="1290759714"/>
-          <PublishItem publishSize="33435" publishTime="1290759677"/>
-          <PublishItem publishSize="33109" publishTime="1290753867"/>
-          <PublishItem publishSize="33136" publishTime="1290714901"/>
-          <PublishItem publishSize="33092" publishTime="1290714551"/>
-          <PublishItem publishSize="33092" publishTime="1290714527"/>
-          <PublishItem publishSize="33120" publishTime="1290714513"/>
-          <PublishItem publishSize="33103" publishTime="1290714418"/>
-          <PublishItem publishSize="33103" publishTime="1290713562"/>
      </publishHistory>
 </DOMDocument>

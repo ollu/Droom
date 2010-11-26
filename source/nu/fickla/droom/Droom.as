@@ -56,7 +56,7 @@ package nu.fickla.droom {
 		
 		private var guiTopBackground : Sprite;
 		private var scoreTextField : TextField;
-		private var WhimsyScoreFont : Font = Library.createFont("WhimsyScoreFont");
+		private var WhimsyScoreFont : Font;
 
 		public function Droom() : void {
 			splashScreen = new SplashScreen();
@@ -65,7 +65,7 @@ package nu.fickla.droom {
 			stage.addChild(splashScreen);
 			splashScreen.addEventListener(MouseEvent.CLICK, startGame, false, 0, true);
 			
-			guiTopBackground = Library.createSprite("GuiBarBg");
+			guiTopBackground = Library.createSprite("GuiTopBarBg");
 			guiTopBackground.visible = false;
 			addChild(guiTopBackground);
 			
@@ -94,7 +94,8 @@ package nu.fickla.droom {
 			theShip = new Ship();
 			stage.addChild(theShip);
 
-			scoreTextField = createScoreBoard();
+			WhimsyScoreFont = Library.createFont("WhimsyScoreFont");
+			scoreTextField = createScoreBoard(WhimsyScoreFont);
 			scoreTextField.text = "0000000";
 			addChild(scoreTextField);
 			scoreTextField.x = 250;
@@ -185,7 +186,7 @@ package nu.fickla.droom {
 			scoreTextField.text = tempScore;
 		}
 		
-		private function createScoreBoard() : TextField {
+		private function createScoreBoard(fontFace : Font) : TextField {
 			var tf : TextField;
 			tf = new TextField();
 			tf.type = TextFieldType.DYNAMIC;
@@ -194,7 +195,7 @@ package nu.fickla.droom {
 			tf.embedFonts = true;
 			
 			var format:TextFormat = new TextFormat();
-            format.font = WhimsyScoreFont.fontName;
+            format.font = fontFace.fontName;
             format.color = 0x727274;
             format.size = 14;
 

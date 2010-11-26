@@ -1,9 +1,10 @@
 package nu.fickla.utils {
-	import flash.text.Font;
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;
 	import flash.display.SimpleButton;
+	import flash.display.Sprite;
 	import flash.system.ApplicationDomain;
+	import flash.text.Font;
 
 	/**
 	 * @author erik
@@ -20,6 +21,10 @@ package nu.fickla.utils {
 
 		public static function createSimpleButton(linkage:String):SimpleButton {
 			return new (ApplicationDomain.currentDomain.getDefinition( linkage ))() as SimpleButton;
+		}
+
+		public static function createSprite(linkage:String):Sprite {
+			return new (ApplicationDomain.currentDomain.getDefinition( linkage ))() as Sprite;
 		}
 
 		public static function createFont(linkage:String):Font {

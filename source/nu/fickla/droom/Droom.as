@@ -4,6 +4,7 @@ package nu.fickla.droom {
 	import nu.fickla.droom.display.MiniBoss;
 	import nu.fickla.droom.display.Ship;
 	import nu.fickla.droom.display.Star;
+	import nu.fickla.utils.Library;
 
 	import flash.display.Sprite;
 	import flash.events.Event;
@@ -12,6 +13,10 @@ package nu.fickla.droom {
 	import flash.media.Sound;
 	import flash.media.SoundChannel;
 	import flash.net.URLRequest;
+	import flash.text.Font;
+	import flash.text.TextField;
+	import flash.text.TextFieldType;
+	import flash.text.TextFormat;
 	import flash.utils.Timer;
 
 	// import nl.demonsters.debugger.MonsterDebugger;
@@ -48,6 +53,10 @@ package nu.fickla.droom {
 
 		// Startscreen
 		private var splashScreen : SplashScreen;
+		
+		private var guiTopBackground : Sprite;
+		private var scoreTextField : TextField;
+		private var WhimsyScoreFont : Font = Library.createFont("WhimsyScoreFont");
 
 		public function Droom() : void {
 			splashScreen = new SplashScreen();
@@ -55,9 +64,17 @@ package nu.fickla.droom {
 			splashScreen.y = 130;
 			stage.addChild(splashScreen);
 			splashScreen.addEventListener(MouseEvent.CLICK, startGame, false, 0, true);
+			
+			guiTopBackground = Library.createSprite("GuiBarBg");
+			guiTopBackground.visible = false;
+			addChild(guiTopBackground);
+			
+			soundClip.load(new URLRequest("game_theme.mp3"));
 		}
 
 		private function startGame(evt : MouseEvent) : void {
+			guiTopBackground.visible = true;
+			
 			// Activates keyboard input
 			stage.focus = this;
 
@@ -65,7 +82,6 @@ package nu.fickla.droom {
 			stage.removeChild(splashScreen);
 			splashScreen = null;
 
-			soundClip.load(new URLRequest("game_theme.mp3"));
 
 			// Play the sound when loaded
 			soundClip.addEventListener(Event.COMPLETE, playSnd, false, 0, true);
@@ -78,7 +94,11 @@ package nu.fickla.droom {
 			theShip = new Ship();
 			stage.addChild(theShip);
 
-			playerScore_txt.text = "0000000";
+			scoreTextField = createScoreBoard();
+			scoreTextField.text = "0000000";
+			addChild(scoreTextField);
+			scoreTextField.x = 250;
+			scoreTextField.y = 3;
 
 			enemyFirstWaveDelay = new Timer(7500, 1);
 			enemyFirstWaveDelay.addEventListener(TimerEvent.TIMER, enemySetup, false, 0, true);
@@ -145,7 +165,7 @@ package nu.fickla.droom {
 			for (var i : uint = 0; i < amount; i++ ) {
 				var star : Star = new Star();
 				star.x = Math.random() * stage.stageWidth;
-				star.y = 5 + Math.random() * stage.stageHeight - 10;
+				star.y = 35 + Math.random() * stage.stageHeight - 10;
 				addChild(star);
 			}
 		}
@@ -162,7 +182,24 @@ package nu.fickla.droom {
 
 		private function updateScoreBoard() : void {
 			var tempScore : String = String(playerScore + 10000000).substr(1, 7);
-			playerScore_txt.text = tempScore;
+			scoreTextField.text = tempScore;
+		}
+		
+		private function createScoreBoard() : TextField {
+			var tf : TextField;
+			tf = new TextField();
+			tf.type = TextFieldType.DYNAMIC;
+			tf.width = 80;
+			tf.height = 20;
+			tf.embedFonts = true;
+			
+			var format:TextFormat = new TextFormat();
+            format.font = WhimsyScoreFont.fontName;
+            format.color = 0x727274;
+            format.size = 14;
+
+            tf.defaultTextFormat = format;
+            return tf;
 		}
 	}
 }

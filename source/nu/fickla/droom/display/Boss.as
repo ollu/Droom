@@ -89,5 +89,9 @@ package nu.fickla.droom.display {
 			removeEventListener(Event.ENTER_FRAME, loop);
 			if (stage.contains(this)) stage.removeChild(this);
 		}
+		
+		public override function toString() : String {
+			return "BOSS";
+		}
 	}
 }

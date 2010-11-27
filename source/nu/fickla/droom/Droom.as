@@ -22,38 +22,29 @@ package nu.fickla.droom {
 	// import nl.demonsters.debugger.MonsterDebugger;
 	public class Droom extends Sprite {
 		// public var debugger:MonsterDebugger = new MonsterDebugger(this);
-
 		// Our hero!
 		private var theShip : Ship;
 		public static var playerScore : uint = 0;
-
 		// Keep track of every enemy
 		public static var enemyList : Array = new Array();
 		private var enemyShipDelay : uint;
-
 		// How many enemy ships per wave for each level
-		private var enemyWaveLength : Array = [5, 7, 9];
+		private var enemyWaveLength : Array = [4, 5, 6];
 		private var enemyWaveCounter : uint = 0;
 		private var countDownTilNextWave : Timer;
-
 		// Wait for music
 		private var enemyFirstWaveDelay : Timer;
-
 		// Passed when we create enemy ship so we can change style of each wave
 		private var enemyStartPos : int = 1;
 		private var countForMiniBoss : uint = 0;
 		private var countForBoss : uint = 0;
-
 		// Current level of the game
 		public static var gameLevel : uint = 0;
-
 		// Create an instance of the Sound class
 		private var soundClip : Sound = new Sound();
 		private var sndChannel : SoundChannel = new SoundChannel();
-
 		// Startscreen
 		private var splashScreen : Sprite;
-		
 		private var guiTopBackground : Sprite;
 		private var scoreTextField : TextField;
 		private var WhimsyScoreFont : Font;
@@ -64,25 +55,25 @@ package nu.fickla.droom {
 			splashScreen.y = 130;
 			stage.addChild(splashScreen);
 			splashScreen.addEventListener(MouseEvent.CLICK, startGame, false, 0, true);
-			
+
 			guiTopBackground = Library.createSprite("GuiTopBarBg");
 			guiTopBackground.visible = false;
 			addChild(guiTopBackground);
+
 			
-			soundClip.load(new URLRequest("game_theme.mp3"));
 		}
 
 		private function startGame(evt : MouseEvent) : void {
 			guiTopBackground.visible = true;
-			
+
 			// Activates keyboard input
 			stage.focus = this;
 
 			splashScreen.removeEventListener(MouseEvent.CLICK, startGame);
 			stage.removeChild(splashScreen);
 			splashScreen = null;
-
-
+			
+			soundClip.load(new URLRequest("game_theme.mp3"));
 			// Play the sound when loaded
 			soundClip.addEventListener(Event.COMPLETE, playSnd, false, 0, true);
 
@@ -114,24 +105,25 @@ package nu.fickla.droom {
 		}
 
 		private function playSnd(event : Event) : void {
-			// sndChannel = soundClip.play(0, int.MAX_VALUE);
+//			 sndChannel = soundClip.play(0, int.MAX_VALUE);
 		}
 
 		private function createEnemies(event : Event) : void {
 			if (enemyWaveCounter != 0 ) {
-				
 				enemyShipDelay++;
 
 				if (enemyShipDelay > 10) {
 					enemyShipDelay = 0;
 					enemyWaveCounter--;
 
-					if (enemyWaveCounter == 0) countDownTilNextWave.start();
-
-					var enemyShip : EnemyShip = new EnemyShip(theShip, enemyStartPos);
-					enemyShip.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
-					stage.addChild(enemyShip);
-					enemyList.push(enemyShip);
+					if (enemyWaveCounter == 0) {
+						countDownTilNextWave.start();
+					} else {
+						var enemyShip : EnemyShip = new EnemyShip(theShip, enemyStartPos);
+						enemyShip.addEventListener(Event.REMOVED_FROM_STAGE, removeEnemy, false, 0, true);
+						stage.addChild(enemyShip);
+						enemyList.push(enemyShip);
+					}
 				}
 			}
 		}
@@ -178,14 +170,14 @@ package nu.fickla.droom {
 			updateScoreBoard();
 
 			// Start timer when miniBoss and boss is gone
-			if (!countDownTilNextWave.running) countDownTilNextWave.start();
+			if (event.currentTarget == "BOSS") countDownTilNextWave.start();
 		}
 
 		private function updateScoreBoard() : void {
 			var tempScore : String = String(playerScore + 10000000).substr(1, 7);
 			scoreTextField.text = tempScore;
 		}
-		
+
 		private function createScoreBoard(fontFace : Font) : TextField {
 			var tf : TextField;
 			tf = new TextField();
@@ -193,14 +185,14 @@ package nu.fickla.droom {
 			tf.width = 80;
 			tf.height = 20;
 			tf.embedFonts = true;
-			
-			var format:TextFormat = new TextFormat();
-            format.font = fontFace.fontName;
-            format.color = 0x727274;
-            format.size = 14;
 
-            tf.defaultTextFormat = format;
-            return tf;
+			var format : TextFormat = new TextFormat();
+			format.font = fontFace.fontName;
+			format.color = 0x727274;
+			format.size = 14;
+
+			tf.defaultTextFormat = format;
+			return tf;
 		}
 	}
 }

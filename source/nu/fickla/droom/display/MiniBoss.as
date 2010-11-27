@@ -88,9 +88,13 @@ package nu.fickla.droom.display {
 			removeSelf();
 		}
 
-		function removeSelf() : void {
+		public function removeSelf() : void {
 			removeEventListener(Event.ENTER_FRAME, loop);
 			if (stage.contains(this)) stage.removeChild(this);
+		}
+		
+		public override function toString() : String {
+			return "BOSS";
 		}
 	}
 }

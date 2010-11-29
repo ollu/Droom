@@ -105,7 +105,7 @@ package nu.fickla.droom {
 		}
 
 		private function playSnd(event : Event) : void {
-//			 sndChannel = soundClip.play(0, int.MAX_VALUE);
+			 sndChannel = soundClip.play(0, int.MAX_VALUE);
 		}
 
 		private function createEnemies(event : Event) : void {
@@ -162,7 +162,7 @@ package nu.fickla.droom {
 				addChild(star);
 			}
 		}
-
+ 
 		private function removeEnemy(event : Event) : void {
 			event.currentTarget.removeEventListener(Event.REMOVED_FROM_STAGE, removeEnemy);
 			enemyList.splice(enemyList.indexOf(event.currentTarget), 1);

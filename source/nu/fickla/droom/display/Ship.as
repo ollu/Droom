@@ -23,6 +23,7 @@ package nu.fickla.droom.display {
 		}
 
 		private function readyOnStage(event : Event) : void {
+
 			healthBar = new GUIStatusBar(100, 0xBC7B7B);
 			healthBar.x = 21;
 			healthBar.y = 6;
@@ -46,21 +47,18 @@ package nu.fickla.droom.display {
 		}
 
 		public function move(event : Event) : void {
-			if (Key.isDown(Keyboard.RIGHT)) {
+			
+			if (Key.isDown(Keyboard.RIGHT))
 				x > stage.stageWidth - 60 ? x = stage.stageWidth - 40 : x = x + speed;
-			}
 
-			if (Key.isDown(Keyboard.LEFT)) {
+			if (Key.isDown(Keyboard.LEFT))
 				x < 70 ? x = 60 : x = x - speed;
-			}
 
-			if (Key.isDown(Keyboard.UP)) {
+			if (Key.isDown(Keyboard.UP))
 				y < 60 ? y = 50 : y = y - speed;
-			}
 
-			if (Key.isDown(Keyboard.DOWN)) {
+			if (Key.isDown(Keyboard.DOWN))
 				y > stage.stageHeight - 40 ? y = stage.stageHeight - 30 : y = y + speed;
-			}
 
 			if (Key.isDown(Keyboard.SPACE)) {
 				if (canFire) {

@@ -162,6 +162,14 @@ package nu.fickla.droom {
 				addChild(star);
 			}
 		}
+		
+		public function gameOver() : void {
+			for each (var enemy in enemyList) {
+				enemy.removeEventListener(Event.REMOVED_FROM_STAGE, removeEnemy);
+				removeChild(enemy);
+			}
+			enemyList = new Array();
+		}
  
 		private function removeEnemy(event : Event) : void {
 			event.currentTarget.removeEventListener(Event.REMOVED_FROM_STAGE, removeEnemy);

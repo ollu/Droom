@@ -1,5 +1,4 @@
 # Droom - A space shoot'em up
-–	A space shoot'em up written in actionscript 3. By: Ola Lundén, KY-Akademien 2010
 
 ### Summary
 This document is about a project done during three intense weeks at KY-Akademien Lindholmen Göteborg. The project is about a space shoot'em up game created in Flash and Actionscript 3 where the focus was to complete the first level. The source code and all files used for the project is available at github through the following address: http://github.com/ollu/droom . Enjoy!
